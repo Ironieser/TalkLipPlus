@@ -32,6 +32,9 @@ def process_video_file(samplename, args, fa):
     bbxs = list()
     for fb in batches:
         preds = fa.get_detections_for_batch(np.asarray(fb))
+        # from matplotlib import pyplot as plt
+        # plt.imsave('test.jpg',fb[0][f[0]:f[2],f[1]:f[3]][:,:,[2,1,0]])
+        # plt.imsave('test2.jpg',fb[j][y1:y2,x1:x2][:,:,[2,1,0]])
 
         for j, f in enumerate(preds):
             if f is None:
@@ -39,6 +42,7 @@ def process_video_file(samplename, args, fa):
                 wtmp = int((width - 96) / 2)
                 x1, y1, x2, y2 = wtmp, htmp, wtmp + 96, htmp + 96
             # htmp = int((height - 200)/2)
+
             # wtmp = int((width - 150)/2)
             # x1, y1, x2, y2 = wtmp, htmp, wtmp+150, htmp+200
             else:

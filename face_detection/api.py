@@ -77,3 +77,38 @@ class FaceAlignment:
             results.append((x1, y1, x2, y2))
 
         return results
+class FaceAlignment2:
+    def __init__(self, landmarks_type, network_size=NetworkSize.LARGE,
+                 device='cuda', flip_input=False, face_detector='sfd', verbose=False):
+        self.device = device
+        self.flip_input = flip_input
+        self.landmarks_type = landmarks_type
+        self.verbose = verbose
+
+        network_size = int(network_size)
+
+        if 'cuda' in device:
+            torch.backends.cudnn.benchmark = True
+
+        # Get the face detector
+        face_detector_module = __import__('face_detection.detection.' + face_detector,
+                                          globals(), locals(), [face_detector], 0)
+        self.face_detector = face_detector_module.FaceDetector(device=device, verbose=verbose)
+
+    def get_detections_for_batch(self, images):
+        images = images[..., ::-1]
+        detected_faces = self.face_detector.detect_from_batch(images.copy())
+
+        batch_results = []
+        for i, ds in enumerate(detected_faces):
+            results = []
+            if len(ds) == 0:
+                results.append(None)
+            else:
+                for d in ds:
+                    d = np.clip(d, 0, None)
+                
+                    x1, y1, x2, y2 = map(int, d[:-1])
+                    results.append((x1, y1, x2, y2))
+            batch_results.append(results)
+        return batch_results

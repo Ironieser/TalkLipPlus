@@ -103,6 +103,12 @@ class TalkLip(nn.Module):
             enc_out = self.audio_encoder(**sample["net_input"])
         # T*B*C, B*T
 
+        # if not self.ft:
+        #     with torch.no_grad():
+        #         enc_out = self.audio_encoder(**sample["net_input"])
+        # else:
+        #     enc_out = self.audio_encoder(**sample["net_input"])
+
         audio_embedding, audio_padding = enc_out['encoder_out'], enc_out['padding_mask']
 
         feats = []

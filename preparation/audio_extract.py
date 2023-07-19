@@ -22,7 +22,8 @@ def main(args):
 
         if not os.path.exists(os.path.dirname(wav_path)):
             os.makedirs(os.path.dirname(wav_path))
-        cmd = "ffmpeg -i " + video_path + " -f wav -vn -y " + wav_path + ' -loglevel quiet'
+        # cmd = "ffmpeg -i " + video_path + " -f wav -vn -y " + wav_path + ' -loglevel quiet'
+        cmd = "ffmpeg -i " + video_path + " -f wav -vn -y " + wav_path
 
         subprocess.call(cmd, shell=True)
 

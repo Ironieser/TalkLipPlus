@@ -3,7 +3,7 @@ import platform
 import math
 import numpy as np
 import os, cv2, argparse, subprocess
-
+import time
 from tqdm import tqdm
 from torch.nn import functional as F
 from argparse import Namespace
@@ -15,7 +15,6 @@ from utils.data_avhubert import collater_audio, emb_roi2im
 
 from models.talklip import TalkLip
 import face_detection
-
 
 def build_encoder(hubert_root, path='config.yaml'):
 
@@ -99,10 +98,11 @@ def prepare_window(window):
 def detect_bbx(frames, fa):
 
     height, width, _ = frames[0].shape
-    batches = [frames[i:i + 32] for i in range(0, len(frames), 32)]
+    batches = [frames[i:i + 2] for i in range(0, len(frames), 2)]
 
     bbxs = list()
-    for fb in batches:
+    # for fb in tqdm(batches):
+    for fb in (batches):
         preds = fa.get_detections_for_batch(np.asarray(fb))
 
         for j, f in enumerate(preds):
@@ -123,7 +123,7 @@ def croppatch(images, bbxs, crop_size=96):
     for i, bbx in enumerate(bbxs):
         bbx[2] = min(bbx[2], width)
         bbx[3] = min(bbx[3], width)
-        patch[i] = cv2.resize(images[i, bbx[1]:bbx[3], bbx[0]:bbx[2], :], (crop_size, crop_size))
+        patch[i] = cv2.resize(images[i, bbx[1]:bbx[3], bbx[0]:bbx[2], :], (crop_size, crop_size),interpolation=cv2.INTER_CUBIC)
     return patch
 
 
@@ -132,10 +132,23 @@ def audio_visual_pad(audio_feats, video_feats):
     repeat = 1
     if diff > 0:
         repeat = math.ceil(len(audio_feats) / len(video_feats))
-        video_feats = torch.repeat_interleave(video_feats, repeat, dim=0)
+        # video_feats = torch.repeat_interleave(video_feats, repeat, dim=0)
+        # len(video_feats.shape)
+        
+        # tile
+        # video_feats = torch.tile(video_feats, (repeat,) + (1,)*(len(video_feats.shape)-1))
+        # tile-tile
+        # video_feats_flip = video_feats.flip(0)
+        video_feats_tmp = torch.concat([video_feats,video_feats.flip(0)]*int(repeat/2),0)
+        if repeat%2!=0:
+            video_feats = torch.concat([video_feats_tmp,video_feats],0)
+        else:
+            video_feats = video_feats_tmp
+        # ,video_feats*(repeat%2)
 
     diff = len(audio_feats) - len(video_feats)
-    video_feats = video_feats[:diff]
+    if diff!= 0:
+        video_feats = video_feats[:diff]
     return video_feats, repeat, diff
 
 
@@ -156,8 +169,10 @@ def fre_audio(wav_data, sample_rate):
             feats = np.concatenate([feats, res], axis=0)
         feats = feats.reshape((-1, stack_order, feat_dim)).reshape(-1, stack_order*feat_dim)
         return feats
-
-    audio_feats = logfbank(wav_data, samplerate=sample_rate).astype(np.float32)  # [T, F]
+    if len(wav_data.shape)>1:
+        audio_feats = logfbank(wav_data[:,0], samplerate=sample_rate).astype(np.float32)  # [T, F]
+    else:
+        audio_feats = logfbank(wav_data, samplerate=sample_rate).astype(np.float32)  # [T, F]
     audio_feats = stacker(audio_feats, 4)  # [T/stack_order_audio, F*stack_order_audio]
     return audio_feats
 
@@ -196,10 +211,23 @@ def data_preprocess(args, face_detector):
     poseImg, repeat, diff = audio_visual_pad(spectrogram, poseImg)
 
     if repeat > 1:
-        imgs = np.repeat(imgs, repeat, axis=0)
-        bbxs = np.repeat(bbxs, repeat, axis=0)
-    imgs = imgs[:diff]
-    bbxs = bbxs[:diff]
+        # imgs = np.repeat(imgs, repeat, axis=0)
+        # bbxs = np.repeat(bbxs, repeat, axis=0)
+        #tile
+        # imgs = np.tile(imgs,(repeat,1,1,1))
+        # bbxs = np.tile(bbxs,(repeat,1,))
+
+        imgs_tmp = np.concatenate([imgs,imgs[::-1]]*int(repeat/2),0)
+        bbxs_tmp = np.concatenate([bbxs,bbxs[::-1]]*int(repeat/2),0)
+        if repeat%2!=0:
+            imgs = np.concatenate([imgs_tmp,imgs],0)
+            bbxs = np.concatenate([bbxs_tmp,bbxs],0)
+        else:
+            imgs = imgs_tmp
+            bbxs = bbxs_tmp
+    if diff!= 0:
+        imgs = imgs[:diff]
+        bbxs = bbxs[:diff]
 
     pose_inp = prepare_window(poseImg)
     id_inp = pose_inp.clone()
@@ -222,7 +250,10 @@ def synt_demo(face_detector, device, model, args):
 
     model.eval()
 
+    start_time = time.time()
     inps, spectrogram, idAudio, padding_mask, imgs, bbxs = data_preprocess(args, face_detector)
+    end_time = time.time()
+    print('data_preprocess time:',end_time-start_time)
 
     inps = inps.to(device)
     spectrogram = spectrogram.to(device)
@@ -231,18 +262,31 @@ def synt_demo(face_detector, device, model, args):
     sample = {'net_input': {'source': {'audio': spectrogram, 'video': None}, 'padding_mask': padding_mask, 'prev_output_tokens': None},
               'target_lengths': None, 'ntokens': None, 'target': None}
 
+    start_time = time.time()
     prediction, _ = model(sample, inps, idAudio, spectrogram.shape[0])
-
+    end_time = time.time()
+    print('model time:',end_time-start_time)
+    start_time = time.time()
     _, height, width, _ = imgs[0].shape
-    processed_img = emb_roi2im([idAudio], imgs, bbxs, prediction, device)
+    
+    # plt.imshow(cv2.cvtColor(prediction[0].permute(1,2,0).cpu().numpy(),cv2.COLOR_BGR2RGB))
+    # plt.savefig('test.jpg')
+    # from matplotlib import pyplot as plt
+    # for i,img in enumerate(prediction):
+    #     plt.imshow(cv2.cvtColor(img.permute(1,2,0).cpu().numpy(),cv2.COLOR_BGR2RGB))
+    #     plt.savefig('./tmp_jpg_girl/'+str(i)+'.jpg')
 
+    processed_img = emb_roi2im([idAudio], imgs, bbxs, prediction, device)
+    
     out_path = '{}.mp4'.format(args.save_path)
     tmpvideo = '{}.avi'.format(args.save_path)
 
     out = cv2.VideoWriter(tmpvideo, cv2.VideoWriter_fourcc(*'DIVX'), 25, (width, height))
 
+
+    # for j, im in enumerate(tqdm(processed_img[0])):
     for j, im in enumerate(processed_img[0]):
-        im = im.cpu().clone().detach().numpy().astype(np.uint8)
+        im = im.cpu().clone().detach().numpy().clip(0,255).astype(np.uint8)
         out.write(im)
 
     out.release()
@@ -250,8 +294,9 @@ def synt_demo(face_detector, device, model, args):
     command = '{} -y -i {} -i {} -strict -2 -q:v 1 {} -loglevel quiet'.format(args.ffmpeg, args.wav_path, tmpvideo, out_path) #
 
     subprocess.call(command, shell=platform.system() != 'Windows')
-
-
+    end_time = time.time()
+    print('sym time:',end_time-start_time)
+    
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
@@ -261,13 +306,24 @@ if __name__ == "__main__":
     parser.add_argument("--wav_path", help="Root folder of audio", required=True, type=str)
     parser.add_argument("--save_path", help="a directory to save the synthesized video", default='tmp', type=str)
     parser.add_argument('--ckpt_path', help='pretrained checkpoint', required=True, type=str)
+    parser.add_argument('--ckpt_step', help='the step of finetuned checkpoint', required=False, default='00000',  type=str)
     parser.add_argument('--avhubert_root', help='Path of av_hubert root', required=True, type=str)
     parser.add_argument('--check', help='whether filter out videos which have been synthesized in save_root', default=False, type=bool)
     parser.add_argument('--ffmpeg', default='ffmpeg', type=str)
     parser.add_argument('--device', default=0, type=int)
-
+    parser.add_argument('--out_name', help='the name of output video', required=False, default='0',  type=str)
     args = parser.parse_args()
+    
+    wav_name = os.path.splitext(os.path.basename(args.wav_path))[0]
+    video_name = os.path.splitext(os.path.basename(args.video_path))[0]
+    if not os.path.exists(args.save_path):
+        os.makedirs(args.save_path)
 
+    if args.ckpt_step != '00000':
+        args.save_path = os.path.join(args.save_path,video_name+"_"+ wav_name + "_"+args.ckpt_step+"_"+args.out_name)
+    else:
+        args.ckpt_step = args.ckpt_path[-9:-4]
+        args.save_path = os.path.join(args.save_path,video_name+"_"+ wav_name + "_"+args.ckpt_step+ "_"+args.out_name)
     device = "cuda:{}".format(args.device) if torch.cuda.is_available() else "cpu"
 
     model = TalkLip(*build_encoder(args.avhubert_root)).to(device)
