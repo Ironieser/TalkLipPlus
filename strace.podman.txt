@@ -1,0 +1,2463 @@
+execve("/usr/bin/git", ["git", "status"], 0x7fff0c9f36a8 /* 9 vars */) = 0
+brk(NULL)                               = 0x558d04b2d000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffcc17d75a0) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe78074000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=7471, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 7471, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe78072000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe77fdb000
+mmap(0x7efe77fdd000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7efe77fdd000
+mmap(0x7efe78048000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7efe78048000
+mmap(0x7efe78070000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x7efe78070000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=108936, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe77fbf000
+mprotect(0x7efe77fc1000, 98304, PROT_NONE) = 0
+mmap(0x7efe77fc1000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7efe77fc1000
+mmap(0x7efe77fd2000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7efe77fd2000
+mmap(0x7efe77fd9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7efe77fd9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0i8\235HZ\227\223\333\350s\360\352,\223\340."..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe77d97000
+mmap(0x7efe77dbf000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7efe77dbf000
+mmap(0x7efe77f54000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7efe77f54000
+mmap(0x7efe77fac000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7efe77fac000
+mmap(0x7efe77fb2000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efe77fb2000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe77d95000
+arch_prctl(ARCH_SET_FS, 0x7efe77d95b80) = 0
+set_tid_address(0x7efe77d95e50)         = 3264
+set_robust_list(0x7efe77d95e60, 24)     = 0
+rseq(0x7efe77d96520, 0x20, 0, 0x53053053) = 0
+mprotect(0x7efe77fac000, 16384, PROT_READ) = 0
+mprotect(0x7efe77fd9000, 4096, PROT_READ) = 0
+mprotect(0x7efe78070000, 4096, PROT_READ) = 0
+mprotect(0x558d0320a000, 16384, PROT_READ) = 0
+mprotect(0x7efe780ae000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7efe78072000, 7471)            = 0
+openat(AT_FDCWD, "/dev/null", O_RDWR)   = 3
+close(3)                                = 0
+rt_sigprocmask(SIG_UNBLOCK, [PIPE], NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+getrandom("\x7e\xb3\x9e\xa5\x00\xc2\x82\x4e", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x558d04b2d000
+brk(0x558d04b4e000)                     = 0x558d04b4e000
+newfstatat(AT_FDCWD, "/usr/share/locale", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+access("/etc/gitconfig", R_OK)          = -1 ENOENT (No such file or directory)
+access("/root/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+access("/root/.gitconfig", R_OK)        = -1 ENOENT (No such file or directory)
+getcwd("/workspace", 129)               = 11
+newfstatat(AT_FDCWD, "/workspace", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/workspace/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/workspace/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "/workspace/.git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 255)  = 21
+read(3, "", 234)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/workspace/.git/commondir", 0x7ffcc17d6e30, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("/workspace/.git/objects", X_OK) = 0
+access("/workspace/.git/refs", X_OK)    = 0
+newfstatat(AT_FDCWD, "/workspace", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 0
+newfstatat(AT_FDCWD, "/workspace/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+geteuid()                               = 0
+newfstatat(AT_FDCWD, ".git/commondir", 0x7ffcc17d6f20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289, ...}, AT_EMPTY_PATH) = 0
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 289
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+getcwd("/workspace", 129)               = 11
+newfstatat(AT_FDCWD, ".git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/commondir", 0x7ffcc17d6ee0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("/etc/gitconfig", R_OK)          = -1 ENOENT (No such file or directory)
+access("/root/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+access("/root/.gitconfig", R_OK)        = -1 ENOENT (No such file or directory)
+access(".git/config", R_OK)             = 0
+openat(AT_FDCWD, ".git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289, ...}, AT_EMPTY_PATH) = 0
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 289
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+getcwd("/workspace", 129)               = 11
+chdir("/workspace")                     = 0
+access("/etc/gitconfig", R_OK)          = -1 ENOENT (No such file or directory)
+access("/root/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+access("/root/.gitconfig", R_OK)        = -1 ENOENT (No such file or directory)
+access(".git/config", R_OK)             = 0
+openat(AT_FDCWD, ".git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=289, ...}, AT_EMPTY_PATH) = 0
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 289
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".git/commondir", 0x7ffcc17d6e80, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 256)  = 21
+read(3, "", 235)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/refs/heads/main", O_RDONLY) = 3
+read(3, "a50ec80503373a875608a5fe278950e2"..., 256) = 41
+read(3, "", 215)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".git/MERGE_HEAD", 0x7ffcc17d7070, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/CHERRY_PICK_HEAD", 0x7ffcc17d6e90, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/packed-refs", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=112, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=112, ...}, AT_EMPTY_PATH) = 0
+read(3, "# pack-refs with: peeled fully-p"..., 112) = 112
+close(3)                                = 0
+openat(AT_FDCWD, ".git/index", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=69947, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 69947, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe77d83000
+close(3)                                = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe77c82000
+munmap(0x7efe77d83000, 69947)           = 0
+ioctl(2, TCGETS, 0x7ffcc17d6fc0)        = -1 ENOTTY (Inappropriate ioctl for device)
+newfstatat(AT_FDCWD, ".vscode", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, ".vscode/launch.json", {st_mode=S_IFREG|0644, st_size=2443, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "README.md", {st_mode=S_IFREG|0644, st_size=6225, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "adjust_au_rate.py", {st_mode=S_IFREG|0644, st_size=1039, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "av_hubert", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "av_hubert/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 255)  = 21
+read(3, "", 234)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/commondir", 0x7ffcc17d6ce0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("av_hubert/.git/objects", X_OK)  = 0
+access("av_hubert/.git/refs", X_OK)     = 0
+newfstatat(AT_FDCWD, "av_hubert/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 255)  = 21
+read(3, "", 234)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/commondir", 0x7ffcc17d6cd0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("av_hubert/.git/objects", X_OK)  = 0
+access("av_hubert/.git/refs", X_OK)     = 0
+newfstatat(AT_FDCWD, "/workspace", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "/workspace/av_hubert/.git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 255)  = 21
+read(3, "", 234)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert/.git/commondir", 0x7ffcc17d6b80, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("/workspace/av_hubert/.git/objects", X_OK) = 0
+access("/workspace/av_hubert/.git/refs", X_OK) = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert/.git/commondir", 0x7ffcc17d6b80, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/workspace/av_hubert/.git/config", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=349, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=349, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04b6f000)                     = 0x558d04b6f000
+read(3, "[core]\n\trepositoryformatversion "..., 8192) = 349
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+brk(0x558d04b6d000)                     = 0x558d04b6d000
+newfstatat(AT_FDCWD, "/workspace", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "/workspace/av_hubert", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/commondir", 0x7ffcc17d6ce0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "av_hubert/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 256)  = 21
+read(3, "", 235)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/refs/heads/main", O_RDONLY) = 3
+read(3, "5ab235b3d9dac548055670d534b283b5"..., 256) = 41
+read(3, "", 215)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, "ckpt", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "ckpt/global_contrastive.pth", {st_mode=S_IFREG|0644, st_size=996804634, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "config.yaml", {st_mode=S_IFREG|0644, st_size=8571, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "datalist", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "datalist/lrw_test.txt", {st_mode=S_IFREG|0644, st_size=654000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "datalist/test.wrd", {st_mode=S_IFREG|0644, st_size=34808, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "datalist/test_partial.tsv", {st_mode=S_IFREG|0644, st_size=43529, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/README.md", {st_mode=S_IFREG|0644, st_size=2553, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/SyncNetInstance_calc_scores.py", {st_mode=S_IFREG|0644, st_size=6838, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/conformer_arg.txt", {st_mode=S_IFREG|0644, st_size=183, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/sync_eval.py", {st_mode=S_IFREG|0644, st_size=2328, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/teacher_force_wer.py", {st_mode=S_IFREG|0644, st_size=7108, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/toavhform.py", {st_mode=S_IFREG|0644, st_size=698, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "evaluation/visual_quality.py", {st_mode=S_IFREG|0644, st_size=2364, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/README.md", {st_mode=S_IFREG|0644, st_size=209, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/__init__.py", {st_mode=S_IFREG|0644, st_size=183, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/__pycache__/__init__.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=327, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/__pycache__/api.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=2729, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/__pycache__/models.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=7124, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/__pycache__/utils.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=10174, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/api.py", {st_mode=S_IFREG|0644, st_size=2266, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/__init__.py", {st_mode=S_IFREG|0644, st_size=30, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/__pycache__/__init__.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=185, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/__pycache__/core.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=4865, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/core.py", {st_mode=S_IFREG|0644, st_size=4868, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__init__.py", {st_mode=S_IFREG|0644, st_size=53, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__pycache__/__init__.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=210, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__pycache__/bbox.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=4211, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__pycache__/detect.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=4183, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__pycache__/net_s3fd.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=3877, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/__pycache__/sfd_detector.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=2968, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/bbox.py", {st_mode=S_IFREG|0644, st_size=4279, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/detect.py", {st_mode=S_IFREG|0644, st_size=4355, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/net_s3fd.py", {st_mode=S_IFREG|0644, st_size=5452, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/s3fd-619a316812.pth", {st_mode=S_IFREG|0644, st_size=89843225, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/s3fd.pth", {st_mode=S_IFREG|0644, st_size=89843225, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/detection/sfd/sfd_detector.py", {st_mode=S_IFREG|0644, st_size=1809, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/models.py", {st_mode=S_IFREG|0644, st_size=8619, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "face_detection/utils.py", {st_mode=S_IFREG|0644, st_size=11808, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00000.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00001.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00002.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00003.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00004.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00005.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00006.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00007.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00008.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00009.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00010.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00011.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00012.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00013.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00014.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00015.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00016.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00017.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00018.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00019.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00020.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00021.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00022.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00023.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00024.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00025.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00026.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00027.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00028.wav", {st_mode=S_IFREG|0644, st_size=1765454, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/audio/MAGGIE_00029.wav", {st_mode=S_IFREG|0644, st_size=1761358, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00000.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00001.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00002.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00003.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00004.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00005.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00006.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00007.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00008.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00009.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00010.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00011.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00012.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00013.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00014.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00015.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00016.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00017.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00018.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00019.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00020.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00021.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00022.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00023.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00024.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00025.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00026.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00027.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00028.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/bbx/MAGGIE_00029.npy", {st_mode=S_IFREG|0644, st_size=8128, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00000.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00001.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00002.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00003.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00004.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00005.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00006.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00007.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00008.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00009.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00010.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00011.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00012.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00013.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00014.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00015.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00016.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00017.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00018.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00019.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00020.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00021.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00022.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00023.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00024.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00025.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00026.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00027.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00028.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00029.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00000.mp4", {st_mode=S_IFREG|0644, st_size=1510162, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00001.mp4", {st_mode=S_IFREG|0644, st_size=1726091, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00002.mp4", {st_mode=S_IFREG|0644, st_size=1714353, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00003.mp4", {st_mode=S_IFREG|0644, st_size=1834177, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00004.mp4", {st_mode=S_IFREG|0644, st_size=1737135, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00005.mp4", {st_mode=S_IFREG|0644, st_size=1688910, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00006.mp4", {st_mode=S_IFREG|0644, st_size=1703641, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00007.mp4", {st_mode=S_IFREG|0644, st_size=1617471, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00008.mp4", {st_mode=S_IFREG|0644, st_size=1541256, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00009.mp4", {st_mode=S_IFREG|0644, st_size=1645479, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00010.mp4", {st_mode=S_IFREG|0644, st_size=1540325, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00011.mp4", {st_mode=S_IFREG|0644, st_size=1655048, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00012.mp4", {st_mode=S_IFREG|0644, st_size=1525813, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00013.mp4", {st_mode=S_IFREG|0644, st_size=1643444, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00014.mp4", {st_mode=S_IFREG|0644, st_size=1597618, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00015.mp4", {st_mode=S_IFREG|0644, st_size=1625902, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00016.mp4", {st_mode=S_IFREG|0644, st_size=1573898, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00017.mp4", {st_mode=S_IFREG|0644, st_size=1676138, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00018.mp4", {st_mode=S_IFREG|0644, st_size=1637707, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00019.mp4", {st_mode=S_IFREG|0644, st_size=1709726, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00020.mp4", {st_mode=S_IFREG|0644, st_size=1635881, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00021.mp4", {st_mode=S_IFREG|0644, st_size=1619902, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00022.mp4", {st_mode=S_IFREG|0644, st_size=1686076, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00023.mp4", {st_mode=S_IFREG|0644, st_size=1528372, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00024.mp4", {st_mode=S_IFREG|0644, st_size=1592302, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00025.mp4", {st_mode=S_IFREG|0644, st_size=1684349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00026.mp4", {st_mode=S_IFREG|0644, st_size=1596078, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00027.mp4", {st_mode=S_IFREG|0644, st_size=1544387, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00028.mp4", {st_mode=S_IFREG|0644, st_size=1518322, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video/MAGGIE_00029.mp4", {st_mode=S_IFREG|0644, st_size=1606636, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/video_paths.txt", {st_mode=S_IFREG|0644, st_size=390, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "inf_demo.py", {st_mode=S_IFREG|0644, st_size=11652, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "inf_test.py", {st_mode=S_IFREG|0644, st_size=12660, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__/__init__.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=126, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__/conv.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=2117, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__/learn_sync.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=3646, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__/talklip.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=5589, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "models/__pycache__/talklip.cpython-38.pyc", O_RDONLY|O_CLOEXEC) = 3
+openat(AT_FDCWD, "/etc/gitattributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/root/.config/git/attributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".gitattributes", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/info/attributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "models/.gitattributes", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "models/__pycache__/.gitattributes", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+read(3, "U\r\r\n\0\0\0\0z\321\212d&(\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 5589) = 5589
+close(3)                                = 0
+newfstatat(AT_FDCWD, "models/conformer_lip_reading.py", {st_mode=S_IFREG|0644, st_size=7235, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/conv.py", {st_mode=S_IFREG|0644, st_size=1718, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/learn_sync.py", {st_mode=S_IFREG|0644, st_size=3855, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/talklip.py", {st_mode=S_IFREG|0644, st_size=10278, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/visual_frontend.py", {st_mode=S_IFREG|0644, st_size=4849, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_1plus.avi", {st_mode=S_IFREG|0644, st_size=420738, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_1plus.mp4", {st_mode=S_IFREG|0644, st_size=301880, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_4plus.avi", {st_mode=S_IFREG|0644, st_size=2942176, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_4plus.mp4", {st_mode=S_IFREG|0644, st_size=1772940, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_4plus_test.avi", {st_mode=S_IFREG|0644, st_size=971096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_6.avi", {st_mode=S_IFREG|0644, st_size=4754746, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_6.mp4", {st_mode=S_IFREG|0644, st_size=3760621, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_6plus.avi", {st_mode=S_IFREG|0644, st_size=1100894, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/1_6plus.mp4", {st_mode=S_IFREG|0644, st_size=779323, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/2_4plus.avi", {st_mode=S_IFREG|0644, st_size=4028354, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/2_4plus.mp4", {st_mode=S_IFREG|0644, st_size=2662393, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/3_4plus.avi", {st_mode=S_IFREG|0644, st_size=3614072, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/3_4plus.mp4", {st_mode=S_IFREG|0644, st_size=1832606, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_1080_4_20.avi", {st_mode=S_IFREG|0644, st_size=62305578, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_1080_4_20.mp4", {st_mode=S_IFREG|0644, st_size=11756543, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_1080_6_20.avi", {st_mode=S_IFREG|0644, st_size=62296424, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_1080_6_20.mp4", {st_mode=S_IFREG|0644, st_size=11899576, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_10_plus_4plus.avi", {st_mode=S_IFREG|0644, st_size=9548228, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_10_plus_4plus.mp4", {st_mode=S_IFREG|0644, st_size=4798531, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6.avi", {st_mode=S_IFREG|0644, st_size=14312380, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6.mp4", {st_mode=S_IFREG|0644, st_size=7139251, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_20.avi", {st_mode=S_IFREG|0644, st_size=10019030, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_20.mp4", {st_mode=S_IFREG|0644, st_size=3116558, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_25.avi", {st_mode=S_IFREG|0644, st_size=7798854, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_25.mp4", {st_mode=S_IFREG|0644, st_size=3365669, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_30.avi", {st_mode=S_IFREG|0644, st_size=9404438, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_30.mp4", {st_mode=S_IFREG|0644, st_size=4012251, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_40.avi", {st_mode=S_IFREG|0644, st_size=12304450, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6_40.mp4", {st_mode=S_IFREG|0644, st_size=5027814, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6plus.avi", {st_mode=S_IFREG|0644, st_size=10019020, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_480_6plus.mp4", {st_mode=S_IFREG|0644, st_size=2976762, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_4plus.avi", {st_mode=S_IFREG|0644, st_size=13551098, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_4plus.mp4", {st_mode=S_IFREG|0644, st_size=6344733, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_4plus_2.avi", {st_mode=S_IFREG|0644, st_size=13551098, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/6_4plus_2.mp4", {st_mode=S_IFREG|0644, st_size=6344733, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_1plus.avi", {st_mode=S_IFREG|0644, st_size=1570136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_1plus.mp4", {st_mode=S_IFREG|0644, st_size=545113, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_4_20.avi", {st_mode=S_IFREG|0644, st_size=6033392, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_4_20.mp4", {st_mode=S_IFREG|0644, st_size=2015680, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_4plus.avi", {st_mode=S_IFREG|0644, st_size=17553672, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_4plus.mp4", {st_mode=S_IFREG|0644, st_size=5747581, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_6plus_orig.avi", {st_mode=S_IFREG|0644, st_size=18564720, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/girl_long_6plus_orig.mp4", {st_mode=S_IFREG|0644, st_size=6126830, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_1plus.avi", {st_mode=S_IFREG|0644, st_size=2067706, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_1plus.mp4", {st_mode=S_IFREG|0644, st_size=699223, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_2plus.avi", {st_mode=S_IFREG|0644, st_size=2067928, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_2plus.mp4", {st_mode=S_IFREG|0644, st_size=694207, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_4plus.avi", {st_mode=S_IFREG|0644, st_size=10132244, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_4plus.mp4", {st_mode=S_IFREG|0644, st_size=3580612, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus.avi", {st_mode=S_IFREG|0644, st_size=4525934, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus.mp4", {st_mode=S_IFREG|0644, st_size=1996618, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_40.avi", {st_mode=S_IFREG|0644, st_size=7412206, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_40.mp4", {st_mode=S_IFREG|0644, st_size=2926181, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_50.avi", {st_mode=S_IFREG|0644, st_size=9073154, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_50.mp4", {st_mode=S_IFREG|0644, st_size=3314137, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_55.avi", {st_mode=S_IFREG|0644, st_size=9796598, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_55.mp4", {st_mode=S_IFREG|0644, st_size=3474189, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_59.avi", {st_mode=S_IFREG|0644, st_size=10003806, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6_plus_59.mp4", {st_mode=S_IFREG|0644, st_size=3357566, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6plus.avi", {st_mode=S_IFREG|0644, st_size=2501088, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6plus.mp4", {st_mode=S_IFREG|0644, st_size=1245692, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6plus_orig.avi", {st_mode=S_IFREG|0644, st_size=10169434, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results/maggei1_6plus_orig.mp4", {st_mode=S_IFREG|0644, st_size=3410133, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_4.avi", {st_mode=S_IFREG|0644, st_size=4537226, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_4.mp4", {st_mode=S_IFREG|0644, st_size=3143208, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_6.avi", {st_mode=S_IFREG|0644, st_size=1759206, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_6.mp4", {st_mode=S_IFREG|0644, st_size=1219507, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_cctv_10.avi", {st_mode=S_IFREG|0644, st_size=807274, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_cctv_10.mp4", {st_mode=S_IFREG|0644, st_size=551499, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=3994502, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=2763203, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_4.avi", {st_mode=S_IFREG|0644, st_size=7068014, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_4.mp4", {st_mode=S_IFREG|0644, st_size=5608845, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_cctv_10.avi", {st_mode=S_IFREG|0644, st_size=1245004, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_cctv_10.mp4", {st_mode=S_IFREG|0644, st_size=981595, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=6251664, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=4969115, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_4.avi", {st_mode=S_IFREG|0644, st_size=7564262, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_4.mp4", {st_mode=S_IFREG|0644, st_size=4169699, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_cctv_10.avi", {st_mode=S_IFREG|0644, st_size=1333882, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_cctv_10.mp4", {st_mode=S_IFREG|0644, st_size=726798, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=6674844, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=3658568, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_4.avi", {st_mode=S_IFREG|0644, st_size=11030974, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_4.mp4", {st_mode=S_IFREG|0644, st_size=6020563, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_cctv_10.avi", {st_mode=S_IFREG|0644, st_size=1929236, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_cctv_10.mp4", {st_mode=S_IFREG|0644, st_size=1048876, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=9754298, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=5298461, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_4.avi", {st_mode=S_IFREG|0644, st_size=7366758, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_4.mp4", {st_mode=S_IFREG|0644, st_size=4245658, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_cctv_10.avi", {st_mode=S_IFREG|0644, st_size=1307208, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_cctv_10.mp4", {st_mode=S_IFREG|0644, st_size=743401, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=6509038, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=3747093, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_4.avi", {st_mode=S_IFREG|0644, st_size=28300868, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_4.mp4", {st_mode=S_IFREG|0644, st_size=8646039, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_6.avi", {st_mode=S_IFREG|0644, st_size=29871086, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_6.mp4", {st_mode=S_IFREG|0644, st_size=9103913, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=24950630, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=7600157, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/cctv_cctv_10.avi", {st_mode=S_IFREG|0644, st_size=1342226, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/cctv_cctv_10.mp4", {st_mode=S_IFREG|0644, st_size=465010, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/cctv_cctv_50.avi", {st_mode=S_IFREG|0644, st_size=7454416, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/cctv_cctv_50.mp4", {st_mode=S_IFREG|0644, st_size=2532192, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/girl_long_4.avi", {st_mode=S_IFREG|0644, st_size=17552494, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/girl_long_4.mp4", {st_mode=S_IFREG|0644, st_size=5743450, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/girl_long_6.avi", {st_mode=S_IFREG|0644, st_size=18564028, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/girl_long_6.mp4", {st_mode=S_IFREG|0644, st_size=6114787, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/maggie1_4.avi", {st_mode=S_IFREG|0644, st_size=37674890, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/maggie1_4.mp4", {st_mode=S_IFREG|0644, st_size=9053082, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/maggie_gl_20_480_4.avi", {st_mode=S_IFREG|0644, st_size=6246572, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/maggie_gl_20_480_4.mp4", {st_mode=S_IFREG|0644, st_size=2882735, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/1_4_plus_1.avi", {st_mode=S_IFREG|0644, st_size=4540178, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/1_4_plus_1.mp4", {st_mode=S_IFREG|0644, st_size=3145032, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/2_4_plus_1.avi", {st_mode=S_IFREG|0644, st_size=7068588, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/2_4_plus_1.mp4", {st_mode=S_IFREG|0644, st_size=5620690, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/2_4plus.mp4", {st_mode=S_IFREG|0644, st_size=2662393, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/3_4_plus_1.avi", {st_mode=S_IFREG|0644, st_size=2665074, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/3_4_plus_1.mp4", {st_mode=S_IFREG|0644, st_size=1463221, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/3_6_1.avi", {st_mode=S_IFREG|0644, st_size=7945432, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/3_6_1.mp4", {st_mode=S_IFREG|0644, st_size=4846738, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/4_4_plus_1.avi", {st_mode=S_IFREG|0644, st_size=11025834, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/4_4_plus_1.mp4", {st_mode=S_IFREG|0644, st_size=6023999, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/6_480_4_plus.avi", {st_mode=S_IFREG|0644, st_size=28453298, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/6_480_4_plus.mp4", {st_mode=S_IFREG|0644, st_size=8500587, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/6_480_4_plus_2.avi", {st_mode=S_IFREG|0644, st_size=28415126, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/6_480_4_plus_2.mp4", {st_mode=S_IFREG|0644, st_size=8588759, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/6_480_4_plus_3.avi", {st_mode=S_IFREG|0644, st_size=28303344, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/6_480_4_plus_3.mp4", {st_mode=S_IFREG|0644, st_size=8655199, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/girl_long_4_plus_1.avi", {st_mode=S_IFREG|0644, st_size=17553778, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/girl_long_4_plus_1.mp4", {st_mode=S_IFREG|0644, st_size=5741903, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/maggie_gl_20_480_4.avi", {st_mode=S_IFREG|0644, st_size=6230704, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/maggie_gl_20_480_4.mp4", {st_mode=S_IFREG|0644, st_size=2885170, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/maggie_gl_20_480_6_2.avi", {st_mode=S_IFREG|0644, st_size=6573350, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_69/maggie_gl_20_480_6_2.mp4", {st_mode=S_IFREG|0644, st_size=3486260, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "output.mp4", {st_mode=S_IFREG|0644, st_size=2066255, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "precess_video.py", {st_mode=S_IFREG|0644, st_size=2145, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation/audio_extract.py", {st_mode=S_IFREG|0644, st_size=1552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation/bbx_extract.py", {st_mode=S_IFREG|0644, st_size=3299, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation/run.pl", {st_mode=S_IFREG|0644, st_size=12809, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preprocess.sh", {st_mode=S_IFREG|0644, st_size=829, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "process_audio.py", {st_mode=S_IFREG|0644, st_size=996, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "process_maggie.py", {st_mode=S_IFREG|0644, st_size=1765, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "requirement.txt", {st_mode=S_IFREG|0644, st_size=50, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test10.avi", {st_mode=S_IFREG|0644, st_size=604552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test10.mp4", {st_mode=S_IFREG|0644, st_size=415749, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test11.avi", {st_mode=S_IFREG|0644, st_size=395976, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test11.mp4", {st_mode=S_IFREG|0644, st_size=273709, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test2.avi", {st_mode=S_IFREG|0644, st_size=3107612, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test2.mp4", {st_mode=S_IFREG|0644, st_size=1876367, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test3.avi", {st_mode=S_IFREG|0644, st_size=10132244, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test3.mp4", {st_mode=S_IFREG|0644, st_size=3580612, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test4.avi", {st_mode=S_IFREG|0644, st_size=9208900, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test4.mp4", {st_mode=S_IFREG|0644, st_size=3349011, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test5.avi", {st_mode=S_IFREG|0644, st_size=11015884, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test5.mp4", {st_mode=S_IFREG|0644, st_size=4344787, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test6.avi", {st_mode=S_IFREG|0644, st_size=19500438, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test6.mp4", {st_mode=S_IFREG|0644, st_size=7197804, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test7.avi", {st_mode=S_IFREG|0644, st_size=1075232, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test7.mp4", {st_mode=S_IFREG|0644, st_size=745280, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test8.avi", {st_mode=S_IFREG|0644, st_size=641786, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test8.mp4", {st_mode=S_IFREG|0644, st_size=445911, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test9.avi", {st_mode=S_IFREG|0644, st_size=612974, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "results/test9.mp4", {st_mode=S_IFREG|0644, st_size=421657, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "sys_video.py", {st_mode=S_IFREG|0644, st_size=1172, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "task_state.pt", {st_mode=S_IFREG|0644, st_size=451887, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "test.jpg", {st_mode=S_IFREG|0644, st_size=16479, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "test1.jpg", {st_mode=S_IFREG|0644, st_size=20337, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "test2.jpg", {st_mode=S_IFREG|0644, st_size=16504, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp.avi", {st_mode=S_IFREG|0644, st_size=11025834, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp.jpg", {st_mode=S_IFREG|0644, st_size=21458, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp.mp4", {st_mode=S_IFREG|0644, st_size=6023999, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/0.jpg", {st_mode=S_IFREG|0644, st_size=17637, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/1.jpg", {st_mode=S_IFREG|0644, st_size=17552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/10.jpg", {st_mode=S_IFREG|0644, st_size=17766, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/100.jpg", {st_mode=S_IFREG|0644, st_size=17883, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/101.jpg", {st_mode=S_IFREG|0644, st_size=17725, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/102.jpg", {st_mode=S_IFREG|0644, st_size=17629, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/103.jpg", {st_mode=S_IFREG|0644, st_size=17695, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/104.jpg", {st_mode=S_IFREG|0644, st_size=17935, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/105.jpg", {st_mode=S_IFREG|0644, st_size=17944, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/106.jpg", {st_mode=S_IFREG|0644, st_size=17981, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/107.jpg", {st_mode=S_IFREG|0644, st_size=17915, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/108.jpg", {st_mode=S_IFREG|0644, st_size=17768, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/109.jpg", {st_mode=S_IFREG|0644, st_size=17822, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/11.jpg", {st_mode=S_IFREG|0644, st_size=17754, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/110.jpg", {st_mode=S_IFREG|0644, st_size=17985, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/111.jpg", {st_mode=S_IFREG|0644, st_size=17969, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/112.jpg", {st_mode=S_IFREG|0644, st_size=17922, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/113.jpg", {st_mode=S_IFREG|0644, st_size=17907, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/114.jpg", {st_mode=S_IFREG|0644, st_size=17902, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/115.jpg", {st_mode=S_IFREG|0644, st_size=17773, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/116.jpg", {st_mode=S_IFREG|0644, st_size=17837, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/117.jpg", {st_mode=S_IFREG|0644, st_size=17870, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/118.jpg", {st_mode=S_IFREG|0644, st_size=17886, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/119.jpg", {st_mode=S_IFREG|0644, st_size=17812, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/12.jpg", {st_mode=S_IFREG|0644, st_size=17699, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/120.jpg", {st_mode=S_IFREG|0644, st_size=17914, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/121.jpg", {st_mode=S_IFREG|0644, st_size=17897, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/122.jpg", {st_mode=S_IFREG|0644, st_size=17897, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/123.jpg", {st_mode=S_IFREG|0644, st_size=17903, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/124.jpg", {st_mode=S_IFREG|0644, st_size=17882, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/125.jpg", {st_mode=S_IFREG|0644, st_size=17882, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/13.jpg", {st_mode=S_IFREG|0644, st_size=17801, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/14.jpg", {st_mode=S_IFREG|0644, st_size=17825, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/15.jpg", {st_mode=S_IFREG|0644, st_size=17817, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/16.jpg", {st_mode=S_IFREG|0644, st_size=17795, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/17.jpg", {st_mode=S_IFREG|0644, st_size=17751, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/18.jpg", {st_mode=S_IFREG|0644, st_size=17840, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/19.jpg", {st_mode=S_IFREG|0644, st_size=17815, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/2.jpg", {st_mode=S_IFREG|0644, st_size=17636, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/20.jpg", {st_mode=S_IFREG|0644, st_size=17845, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/21.jpg", {st_mode=S_IFREG|0644, st_size=17856, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/22.jpg", {st_mode=S_IFREG|0644, st_size=17775, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/23.jpg", {st_mode=S_IFREG|0644, st_size=17798, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/24.jpg", {st_mode=S_IFREG|0644, st_size=17689, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/25.jpg", {st_mode=S_IFREG|0644, st_size=17716, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/26.jpg", {st_mode=S_IFREG|0644, st_size=17837, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/27.jpg", {st_mode=S_IFREG|0644, st_size=17837, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/28.jpg", {st_mode=S_IFREG|0644, st_size=17717, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/29.jpg", {st_mode=S_IFREG|0644, st_size=17702, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/3.jpg", {st_mode=S_IFREG|0644, st_size=17646, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/30.jpg", {st_mode=S_IFREG|0644, st_size=17728, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/31.jpg", {st_mode=S_IFREG|0644, st_size=17974, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/32.jpg", {st_mode=S_IFREG|0644, st_size=17860, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/33.jpg", {st_mode=S_IFREG|0644, st_size=17749, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/34.jpg", {st_mode=S_IFREG|0644, st_size=17771, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/35.jpg", {st_mode=S_IFREG|0644, st_size=17724, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/36.jpg", {st_mode=S_IFREG|0644, st_size=17813, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/37.jpg", {st_mode=S_IFREG|0644, st_size=17789, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/38.jpg", {st_mode=S_IFREG|0644, st_size=17818, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/39.jpg", {st_mode=S_IFREG|0644, st_size=17811, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/4.jpg", {st_mode=S_IFREG|0644, st_size=17710, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/40.jpg", {st_mode=S_IFREG|0644, st_size=17828, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/41.jpg", {st_mode=S_IFREG|0644, st_size=17761, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/42.jpg", {st_mode=S_IFREG|0644, st_size=17744, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/43.jpg", {st_mode=S_IFREG|0644, st_size=17707, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/44.jpg", {st_mode=S_IFREG|0644, st_size=17812, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/45.jpg", {st_mode=S_IFREG|0644, st_size=17893, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/46.jpg", {st_mode=S_IFREG|0644, st_size=17963, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/47.jpg", {st_mode=S_IFREG|0644, st_size=18024, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/48.jpg", {st_mode=S_IFREG|0644, st_size=17999, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/49.jpg", {st_mode=S_IFREG|0644, st_size=17940, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/5.jpg", {st_mode=S_IFREG|0644, st_size=17531, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/50.jpg", {st_mode=S_IFREG|0644, st_size=17892, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/51.jpg", {st_mode=S_IFREG|0644, st_size=17919, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/52.jpg", {st_mode=S_IFREG|0644, st_size=17982, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/53.jpg", {st_mode=S_IFREG|0644, st_size=17976, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/54.jpg", {st_mode=S_IFREG|0644, st_size=17865, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/55.jpg", {st_mode=S_IFREG|0644, st_size=17929, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/56.jpg", {st_mode=S_IFREG|0644, st_size=17890, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/57.jpg", {st_mode=S_IFREG|0644, st_size=17954, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/58.jpg", {st_mode=S_IFREG|0644, st_size=17936, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/59.jpg", {st_mode=S_IFREG|0644, st_size=17941, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/6.jpg", {st_mode=S_IFREG|0644, st_size=17715, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/60.jpg", {st_mode=S_IFREG|0644, st_size=17959, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/61.jpg", {st_mode=S_IFREG|0644, st_size=17946, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/62.jpg", {st_mode=S_IFREG|0644, st_size=17912, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/63.jpg", {st_mode=S_IFREG|0644, st_size=17955, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/64.jpg", {st_mode=S_IFREG|0644, st_size=17847, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/65.jpg", {st_mode=S_IFREG|0644, st_size=17757, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/66.jpg", {st_mode=S_IFREG|0644, st_size=17675, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/67.jpg", {st_mode=S_IFREG|0644, st_size=17934, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/68.jpg", {st_mode=S_IFREG|0644, st_size=17928, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/69.jpg", {st_mode=S_IFREG|0644, st_size=17851, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/7.jpg", {st_mode=S_IFREG|0644, st_size=17757, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/70.jpg", {st_mode=S_IFREG|0644, st_size=17778, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/71.jpg", {st_mode=S_IFREG|0644, st_size=17900, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/72.jpg", {st_mode=S_IFREG|0644, st_size=17684, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/73.jpg", {st_mode=S_IFREG|0644, st_size=17832, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/74.jpg", {st_mode=S_IFREG|0644, st_size=17781, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/75.jpg", {st_mode=S_IFREG|0644, st_size=17875, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/76.jpg", {st_mode=S_IFREG|0644, st_size=18071, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/77.jpg", {st_mode=S_IFREG|0644, st_size=18191, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/78.jpg", {st_mode=S_IFREG|0644, st_size=18209, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/79.jpg", {st_mode=S_IFREG|0644, st_size=18018, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/8.jpg", {st_mode=S_IFREG|0644, st_size=17824, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/80.jpg", {st_mode=S_IFREG|0644, st_size=17927, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/81.jpg", {st_mode=S_IFREG|0644, st_size=17800, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/82.jpg", {st_mode=S_IFREG|0644, st_size=17738, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/83.jpg", {st_mode=S_IFREG|0644, st_size=17592, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/84.jpg", {st_mode=S_IFREG|0644, st_size=17491, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/85.jpg", {st_mode=S_IFREG|0644, st_size=17573, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/86.jpg", {st_mode=S_IFREG|0644, st_size=17843, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/87.jpg", {st_mode=S_IFREG|0644, st_size=17912, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/88.jpg", {st_mode=S_IFREG|0644, st_size=17960, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/89.jpg", {st_mode=S_IFREG|0644, st_size=17874, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/9.jpg", {st_mode=S_IFREG|0644, st_size=17827, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/90.jpg", {st_mode=S_IFREG|0644, st_size=17932, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/91.jpg", {st_mode=S_IFREG|0644, st_size=17835, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/92.jpg", {st_mode=S_IFREG|0644, st_size=17759, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/93.jpg", {st_mode=S_IFREG|0644, st_size=17695, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/94.jpg", {st_mode=S_IFREG|0644, st_size=17717, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/95.jpg", {st_mode=S_IFREG|0644, st_size=17766, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/96.jpg", {st_mode=S_IFREG|0644, st_size=17999, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/97.jpg", {st_mode=S_IFREG|0644, st_size=18073, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/98.jpg", {st_mode=S_IFREG|0644, st_size=18029, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg/99.jpg", {st_mode=S_IFREG|0644, st_size=18001, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/0.jpg", {st_mode=S_IFREG|0644, st_size=21410, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/1.jpg", {st_mode=S_IFREG|0644, st_size=21224, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/10.jpg", {st_mode=S_IFREG|0644, st_size=21359, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/100.jpg", {st_mode=S_IFREG|0644, st_size=20958, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/101.jpg", {st_mode=S_IFREG|0644, st_size=21278, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/102.jpg", {st_mode=S_IFREG|0644, st_size=21223, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/103.jpg", {st_mode=S_IFREG|0644, st_size=21331, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/104.jpg", {st_mode=S_IFREG|0644, st_size=21610, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/105.jpg", {st_mode=S_IFREG|0644, st_size=21610, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/106.jpg", {st_mode=S_IFREG|0644, st_size=21506, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/107.jpg", {st_mode=S_IFREG|0644, st_size=21346, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/108.jpg", {st_mode=S_IFREG|0644, st_size=21297, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/109.jpg", {st_mode=S_IFREG|0644, st_size=21287, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/11.jpg", {st_mode=S_IFREG|0644, st_size=21439, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/110.jpg", {st_mode=S_IFREG|0644, st_size=21301, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/111.jpg", {st_mode=S_IFREG|0644, st_size=21321, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/112.jpg", {st_mode=S_IFREG|0644, st_size=21364, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/113.jpg", {st_mode=S_IFREG|0644, st_size=21241, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/114.jpg", {st_mode=S_IFREG|0644, st_size=21042, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/115.jpg", {st_mode=S_IFREG|0644, st_size=20827, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/116.jpg", {st_mode=S_IFREG|0644, st_size=20890, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/117.jpg", {st_mode=S_IFREG|0644, st_size=20911, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/118.jpg", {st_mode=S_IFREG|0644, st_size=20935, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/119.jpg", {st_mode=S_IFREG|0644, st_size=21162, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/12.jpg", {st_mode=S_IFREG|0644, st_size=21527, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/120.jpg", {st_mode=S_IFREG|0644, st_size=21059, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/121.jpg", {st_mode=S_IFREG|0644, st_size=21072, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/122.jpg", {st_mode=S_IFREG|0644, st_size=21140, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/123.jpg", {st_mode=S_IFREG|0644, st_size=21171, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/124.jpg", {st_mode=S_IFREG|0644, st_size=21190, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/125.jpg", {st_mode=S_IFREG|0644, st_size=21136, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/126.jpg", {st_mode=S_IFREG|0644, st_size=21084, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/127.jpg", {st_mode=S_IFREG|0644, st_size=20988, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/128.jpg", {st_mode=S_IFREG|0644, st_size=20998, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/129.jpg", {st_mode=S_IFREG|0644, st_size=21013, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/13.jpg", {st_mode=S_IFREG|0644, st_size=21341, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/130.jpg", {st_mode=S_IFREG|0644, st_size=21111, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/131.jpg", {st_mode=S_IFREG|0644, st_size=21372, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/132.jpg", {st_mode=S_IFREG|0644, st_size=21435, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/133.jpg", {st_mode=S_IFREG|0644, st_size=21270, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/134.jpg", {st_mode=S_IFREG|0644, st_size=21318, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/135.jpg", {st_mode=S_IFREG|0644, st_size=21102, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/136.jpg", {st_mode=S_IFREG|0644, st_size=21126, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/137.jpg", {st_mode=S_IFREG|0644, st_size=21016, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/138.jpg", {st_mode=S_IFREG|0644, st_size=21070, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/139.jpg", {st_mode=S_IFREG|0644, st_size=21237, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/14.jpg", {st_mode=S_IFREG|0644, st_size=21320, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/140.jpg", {st_mode=S_IFREG|0644, st_size=21214, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/141.jpg", {st_mode=S_IFREG|0644, st_size=21341, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/142.jpg", {st_mode=S_IFREG|0644, st_size=21213, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/143.jpg", {st_mode=S_IFREG|0644, st_size=21231, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/144.jpg", {st_mode=S_IFREG|0644, st_size=21135, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/145.jpg", {st_mode=S_IFREG|0644, st_size=21208, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/146.jpg", {st_mode=S_IFREG|0644, st_size=21134, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/147.jpg", {st_mode=S_IFREG|0644, st_size=21186, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/148.jpg", {st_mode=S_IFREG|0644, st_size=21235, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/149.jpg", {st_mode=S_IFREG|0644, st_size=21298, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/15.jpg", {st_mode=S_IFREG|0644, st_size=21250, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/150.jpg", {st_mode=S_IFREG|0644, st_size=21503, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/151.jpg", {st_mode=S_IFREG|0644, st_size=21605, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/152.jpg", {st_mode=S_IFREG|0644, st_size=21527, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/153.jpg", {st_mode=S_IFREG|0644, st_size=21394, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/154.jpg", {st_mode=S_IFREG|0644, st_size=21386, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/155.jpg", {st_mode=S_IFREG|0644, st_size=21381, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/156.jpg", {st_mode=S_IFREG|0644, st_size=21223, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/157.jpg", {st_mode=S_IFREG|0644, st_size=21143, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/158.jpg", {st_mode=S_IFREG|0644, st_size=21001, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/159.jpg", {st_mode=S_IFREG|0644, st_size=20878, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/16.jpg", {st_mode=S_IFREG|0644, st_size=21343, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/160.jpg", {st_mode=S_IFREG|0644, st_size=20911, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/161.jpg", {st_mode=S_IFREG|0644, st_size=21098, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/162.jpg", {st_mode=S_IFREG|0644, st_size=21115, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/163.jpg", {st_mode=S_IFREG|0644, st_size=20942, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/164.jpg", {st_mode=S_IFREG|0644, st_size=20845, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/165.jpg", {st_mode=S_IFREG|0644, st_size=21015, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/166.jpg", {st_mode=S_IFREG|0644, st_size=21131, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/167.jpg", {st_mode=S_IFREG|0644, st_size=21063, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/168.jpg", {st_mode=S_IFREG|0644, st_size=21069, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/169.jpg", {st_mode=S_IFREG|0644, st_size=20992, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/17.jpg", {st_mode=S_IFREG|0644, st_size=21361, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/170.jpg", {st_mode=S_IFREG|0644, st_size=21017, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/171.jpg", {st_mode=S_IFREG|0644, st_size=21243, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/172.jpg", {st_mode=S_IFREG|0644, st_size=21194, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/173.jpg", {st_mode=S_IFREG|0644, st_size=20890, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/174.jpg", {st_mode=S_IFREG|0644, st_size=20956, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/175.jpg", {st_mode=S_IFREG|0644, st_size=21220, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/176.jpg", {st_mode=S_IFREG|0644, st_size=21000, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/177.jpg", {st_mode=S_IFREG|0644, st_size=21214, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/178.jpg", {st_mode=S_IFREG|0644, st_size=21131, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/179.jpg", {st_mode=S_IFREG|0644, st_size=21268, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/18.jpg", {st_mode=S_IFREG|0644, st_size=21254, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/180.jpg", {st_mode=S_IFREG|0644, st_size=21267, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/181.jpg", {st_mode=S_IFREG|0644, st_size=21182, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/182.jpg", {st_mode=S_IFREG|0644, st_size=21176, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/183.jpg", {st_mode=S_IFREG|0644, st_size=21182, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/184.jpg", {st_mode=S_IFREG|0644, st_size=21202, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/185.jpg", {st_mode=S_IFREG|0644, st_size=21173, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/186.jpg", {st_mode=S_IFREG|0644, st_size=21265, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/187.jpg", {st_mode=S_IFREG|0644, st_size=21519, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/188.jpg", {st_mode=S_IFREG|0644, st_size=21823, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/189.jpg", {st_mode=S_IFREG|0644, st_size=21645, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/19.jpg", {st_mode=S_IFREG|0644, st_size=21095, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/190.jpg", {st_mode=S_IFREG|0644, st_size=21768, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/191.jpg", {st_mode=S_IFREG|0644, st_size=21781, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/192.jpg", {st_mode=S_IFREG|0644, st_size=21469, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/193.jpg", {st_mode=S_IFREG|0644, st_size=21433, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/194.jpg", {st_mode=S_IFREG|0644, st_size=21580, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/195.jpg", {st_mode=S_IFREG|0644, st_size=21610, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/196.jpg", {st_mode=S_IFREG|0644, st_size=21065, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/197.jpg", {st_mode=S_IFREG|0644, st_size=21099, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/198.jpg", {st_mode=S_IFREG|0644, st_size=21265, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/199.jpg", {st_mode=S_IFREG|0644, st_size=21395, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/2.jpg", {st_mode=S_IFREG|0644, st_size=21218, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/20.jpg", {st_mode=S_IFREG|0644, st_size=21349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/200.jpg", {st_mode=S_IFREG|0644, st_size=21241, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/201.jpg", {st_mode=S_IFREG|0644, st_size=21224, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/202.jpg", {st_mode=S_IFREG|0644, st_size=21396, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/203.jpg", {st_mode=S_IFREG|0644, st_size=21609, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/204.jpg", {st_mode=S_IFREG|0644, st_size=21619, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/205.jpg", {st_mode=S_IFREG|0644, st_size=21449, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/206.jpg", {st_mode=S_IFREG|0644, st_size=21291, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/207.jpg", {st_mode=S_IFREG|0644, st_size=21300, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/208.jpg", {st_mode=S_IFREG|0644, st_size=21349, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/209.jpg", {st_mode=S_IFREG|0644, st_size=21474, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/21.jpg", {st_mode=S_IFREG|0644, st_size=21400, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/210.jpg", {st_mode=S_IFREG|0644, st_size=21369, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/211.jpg", {st_mode=S_IFREG|0644, st_size=21191, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/212.jpg", {st_mode=S_IFREG|0644, st_size=21144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/213.jpg", {st_mode=S_IFREG|0644, st_size=21133, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/214.jpg", {st_mode=S_IFREG|0644, st_size=21106, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/215.jpg", {st_mode=S_IFREG|0644, st_size=21160, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/216.jpg", {st_mode=S_IFREG|0644, st_size=21310, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/217.jpg", {st_mode=S_IFREG|0644, st_size=21462, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/218.jpg", {st_mode=S_IFREG|0644, st_size=21273, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/219.jpg", {st_mode=S_IFREG|0644, st_size=20765, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/22.jpg", {st_mode=S_IFREG|0644, st_size=21074, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/220.jpg", {st_mode=S_IFREG|0644, st_size=20743, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/221.jpg", {st_mode=S_IFREG|0644, st_size=21011, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/222.jpg", {st_mode=S_IFREG|0644, st_size=21123, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/223.jpg", {st_mode=S_IFREG|0644, st_size=20906, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/224.jpg", {st_mode=S_IFREG|0644, st_size=20756, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/225.jpg", {st_mode=S_IFREG|0644, st_size=20767, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/226.jpg", {st_mode=S_IFREG|0644, st_size=20817, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/227.jpg", {st_mode=S_IFREG|0644, st_size=21434, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/228.jpg", {st_mode=S_IFREG|0644, st_size=21633, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/229.jpg", {st_mode=S_IFREG|0644, st_size=21651, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/23.jpg", {st_mode=S_IFREG|0644, st_size=20972, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/230.jpg", {st_mode=S_IFREG|0644, st_size=21676, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/231.jpg", {st_mode=S_IFREG|0644, st_size=21342, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/232.jpg", {st_mode=S_IFREG|0644, st_size=21041, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/233.jpg", {st_mode=S_IFREG|0644, st_size=21064, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/234.jpg", {st_mode=S_IFREG|0644, st_size=21004, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/235.jpg", {st_mode=S_IFREG|0644, st_size=20689, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/236.jpg", {st_mode=S_IFREG|0644, st_size=20701, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/237.jpg", {st_mode=S_IFREG|0644, st_size=20915, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/238.jpg", {st_mode=S_IFREG|0644, st_size=21073, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/239.jpg", {st_mode=S_IFREG|0644, st_size=20941, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/24.jpg", {st_mode=S_IFREG|0644, st_size=21318, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/240.jpg", {st_mode=S_IFREG|0644, st_size=21011, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/241.jpg", {st_mode=S_IFREG|0644, st_size=21395, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/242.jpg", {st_mode=S_IFREG|0644, st_size=21473, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/243.jpg", {st_mode=S_IFREG|0644, st_size=21440, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/244.jpg", {st_mode=S_IFREG|0644, st_size=21467, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/245.jpg", {st_mode=S_IFREG|0644, st_size=21438, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/246.jpg", {st_mode=S_IFREG|0644, st_size=21490, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/247.jpg", {st_mode=S_IFREG|0644, st_size=21382, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/248.jpg", {st_mode=S_IFREG|0644, st_size=21420, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/249.jpg", {st_mode=S_IFREG|0644, st_size=21533, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/25.jpg", {st_mode=S_IFREG|0644, st_size=21196, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/250.jpg", {st_mode=S_IFREG|0644, st_size=21316, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/251.jpg", {st_mode=S_IFREG|0644, st_size=21196, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/252.jpg", {st_mode=S_IFREG|0644, st_size=21270, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/253.jpg", {st_mode=S_IFREG|0644, st_size=21337, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/254.jpg", {st_mode=S_IFREG|0644, st_size=21289, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/255.jpg", {st_mode=S_IFREG|0644, st_size=21309, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/256.jpg", {st_mode=S_IFREG|0644, st_size=21291, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/257.jpg", {st_mode=S_IFREG|0644, st_size=21217, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/258.jpg", {st_mode=S_IFREG|0644, st_size=21401, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/259.jpg", {st_mode=S_IFREG|0644, st_size=21385, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/26.jpg", {st_mode=S_IFREG|0644, st_size=21214, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/260.jpg", {st_mode=S_IFREG|0644, st_size=21370, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/261.jpg", {st_mode=S_IFREG|0644, st_size=21386, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/262.jpg", {st_mode=S_IFREG|0644, st_size=21251, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/263.jpg", {st_mode=S_IFREG|0644, st_size=21294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/264.jpg", {st_mode=S_IFREG|0644, st_size=21408, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/265.jpg", {st_mode=S_IFREG|0644, st_size=21404, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/266.jpg", {st_mode=S_IFREG|0644, st_size=21746, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/267.jpg", {st_mode=S_IFREG|0644, st_size=21718, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/268.jpg", {st_mode=S_IFREG|0644, st_size=21767, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/269.jpg", {st_mode=S_IFREG|0644, st_size=21872, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/27.jpg", {st_mode=S_IFREG|0644, st_size=21263, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/270.jpg", {st_mode=S_IFREG|0644, st_size=21685, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/271.jpg", {st_mode=S_IFREG|0644, st_size=21536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/272.jpg", {st_mode=S_IFREG|0644, st_size=21330, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/273.jpg", {st_mode=S_IFREG|0644, st_size=21325, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/274.jpg", {st_mode=S_IFREG|0644, st_size=21154, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/275.jpg", {st_mode=S_IFREG|0644, st_size=21114, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/276.jpg", {st_mode=S_IFREG|0644, st_size=21144, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/277.jpg", {st_mode=S_IFREG|0644, st_size=21276, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/28.jpg", {st_mode=S_IFREG|0644, st_size=21352, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/29.jpg", {st_mode=S_IFREG|0644, st_size=21518, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/3.jpg", {st_mode=S_IFREG|0644, st_size=21344, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/30.jpg", {st_mode=S_IFREG|0644, st_size=21500, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/31.jpg", {st_mode=S_IFREG|0644, st_size=21726, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/32.jpg", {st_mode=S_IFREG|0644, st_size=21765, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/33.jpg", {st_mode=S_IFREG|0644, st_size=21575, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/34.jpg", {st_mode=S_IFREG|0644, st_size=21235, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/35.jpg", {st_mode=S_IFREG|0644, st_size=21103, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/36.jpg", {st_mode=S_IFREG|0644, st_size=21125, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/37.jpg", {st_mode=S_IFREG|0644, st_size=21199, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/38.jpg", {st_mode=S_IFREG|0644, st_size=21200, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/39.jpg", {st_mode=S_IFREG|0644, st_size=21486, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/4.jpg", {st_mode=S_IFREG|0644, st_size=21215, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/40.jpg", {st_mode=S_IFREG|0644, st_size=21536, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/41.jpg", {st_mode=S_IFREG|0644, st_size=21267, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/42.jpg", {st_mode=S_IFREG|0644, st_size=21075, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/43.jpg", {st_mode=S_IFREG|0644, st_size=21045, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/44.jpg", {st_mode=S_IFREG|0644, st_size=21333, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/45.jpg", {st_mode=S_IFREG|0644, st_size=21450, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/46.jpg", {st_mode=S_IFREG|0644, st_size=21574, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/47.jpg", {st_mode=S_IFREG|0644, st_size=21638, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/48.jpg", {st_mode=S_IFREG|0644, st_size=21625, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/49.jpg", {st_mode=S_IFREG|0644, st_size=21523, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/5.jpg", {st_mode=S_IFREG|0644, st_size=21187, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/50.jpg", {st_mode=S_IFREG|0644, st_size=21505, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/51.jpg", {st_mode=S_IFREG|0644, st_size=21604, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/52.jpg", {st_mode=S_IFREG|0644, st_size=21709, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/53.jpg", {st_mode=S_IFREG|0644, st_size=21417, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/54.jpg", {st_mode=S_IFREG|0644, st_size=21080, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/55.jpg", {st_mode=S_IFREG|0644, st_size=20970, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/56.jpg", {st_mode=S_IFREG|0644, st_size=21088, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/57.jpg", {st_mode=S_IFREG|0644, st_size=21616, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/58.jpg", {st_mode=S_IFREG|0644, st_size=21438, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/59.jpg", {st_mode=S_IFREG|0644, st_size=21196, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/6.jpg", {st_mode=S_IFREG|0644, st_size=21294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/60.jpg", {st_mode=S_IFREG|0644, st_size=21063, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/61.jpg", {st_mode=S_IFREG|0644, st_size=20988, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/62.jpg", {st_mode=S_IFREG|0644, st_size=21196, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/63.jpg", {st_mode=S_IFREG|0644, st_size=21176, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/64.jpg", {st_mode=S_IFREG|0644, st_size=21273, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/65.jpg", {st_mode=S_IFREG|0644, st_size=21381, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/66.jpg", {st_mode=S_IFREG|0644, st_size=21379, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/67.jpg", {st_mode=S_IFREG|0644, st_size=21386, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/68.jpg", {st_mode=S_IFREG|0644, st_size=21332, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/69.jpg", {st_mode=S_IFREG|0644, st_size=21280, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/7.jpg", {st_mode=S_IFREG|0644, st_size=21366, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/70.jpg", {st_mode=S_IFREG|0644, st_size=21308, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/71.jpg", {st_mode=S_IFREG|0644, st_size=21282, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/72.jpg", {st_mode=S_IFREG|0644, st_size=21142, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/73.jpg", {st_mode=S_IFREG|0644, st_size=20790, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/74.jpg", {st_mode=S_IFREG|0644, st_size=20620, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/75.jpg", {st_mode=S_IFREG|0644, st_size=20877, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/76.jpg", {st_mode=S_IFREG|0644, st_size=21360, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/77.jpg", {st_mode=S_IFREG|0644, st_size=21145, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/78.jpg", {st_mode=S_IFREG|0644, st_size=20892, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/79.jpg", {st_mode=S_IFREG|0644, st_size=20798, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/8.jpg", {st_mode=S_IFREG|0644, st_size=21237, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/80.jpg", {st_mode=S_IFREG|0644, st_size=20849, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/81.jpg", {st_mode=S_IFREG|0644, st_size=20795, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/82.jpg", {st_mode=S_IFREG|0644, st_size=20726, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/83.jpg", {st_mode=S_IFREG|0644, st_size=20817, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/84.jpg", {st_mode=S_IFREG|0644, st_size=20842, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/85.jpg", {st_mode=S_IFREG|0644, st_size=20855, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/86.jpg", {st_mode=S_IFREG|0644, st_size=21201, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/87.jpg", {st_mode=S_IFREG|0644, st_size=21174, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/88.jpg", {st_mode=S_IFREG|0644, st_size=21215, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/89.jpg", {st_mode=S_IFREG|0644, st_size=21113, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/9.jpg", {st_mode=S_IFREG|0644, st_size=21357, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/90.jpg", {st_mode=S_IFREG|0644, st_size=21226, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/91.jpg", {st_mode=S_IFREG|0644, st_size=21231, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/92.jpg", {st_mode=S_IFREG|0644, st_size=21271, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/93.jpg", {st_mode=S_IFREG|0644, st_size=21280, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/94.jpg", {st_mode=S_IFREG|0644, st_size=21207, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/95.jpg", {st_mode=S_IFREG|0644, st_size=20984, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/96.jpg", {st_mode=S_IFREG|0644, st_size=21032, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/97.jpg", {st_mode=S_IFREG|0644, st_size=20862, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/98.jpg", {st_mode=S_IFREG|0644, st_size=20956, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "tmp_jpg_girl/99.jpg", {st_mode=S_IFREG|0644, st_size=20946, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "train.py", {st_mode=S_IFREG|0644, st_size=30017, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils/__pycache__/__init__.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=125, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils/__pycache__/data_avhubert.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=6315, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils/data_avhubert.py", {st_mode=S_IFREG|0644, st_size=5852, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "utils/metrics.py", {st_mode=S_IFREG|0644, st_size=6423, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "video_paths.txt", {st_mode=S_IFREG|0644, st_size=540, ...}, AT_SYMLINK_NOFOLLOW) = 0
+readlink(".git/index", 0x558d04b4da90, 32) = -1 EINVAL (Invalid argument)
+getcwd("/workspace", 129)               = 11
+openat(AT_FDCWD, "/workspace/.git/index.lock", O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC, 0666) = 3
+rt_sigaction(SIGINT, {sa_handler=0x558d030e7110, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x558d030e7110, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x558d030e7110, sa_mask=[TERM], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x558d030e7110, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=0x558d030e7110, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe77dd9520}, 8) = 0
+getpid()                                = 3264
+newfstatat(AT_FDCWD, ".git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/HEAD", O_RDONLY) = 4
+read(4, "ref: refs/heads/main\n", 256)  = 21
+read(4, "", 235)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/refs/heads/main", O_RDONLY) = 4
+read(4, "a50ec80503373a875608a5fe278950e2"..., 256) = 41
+read(4, "", 215)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/HEAD", 0x7ffcc17d6c20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/tags/HEAD", 0x7ffcc17d6c20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/HEAD", 0x7ffcc17d6c20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/HEAD", 0x7ffcc17d6c20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/HEAD/HEAD", 0x7ffcc17d6c20, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".vscode/launch.json", {st_mode=S_IFREG|0644, st_size=2443, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, ".vscode", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "av_hubert", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/HEAD", O_RDONLY) = 4
+read(4, "ref: refs/heads/main\n", 256)  = 21
+read(4, "", 235)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/refs/heads/main", O_RDONLY) = 4
+read(4, "5ab235b3d9dac548055670d534b283b5"..., 256) = 41
+read(4, "", 215)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "/workspace/.gitmodules", 0x7ffcc17d6090, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/HEAD", O_RDONLY) = 4
+read(4, "ref: refs/heads/main\n", 256)  = 21
+read(4, "", 235)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/refs/heads/main", O_RDONLY) = 4
+read(4, "a50ec80503373a875608a5fe278950e2"..., 256) = 41
+read(4, "", 215)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/HEAD", 0x7ffcc17d5ae0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/tags/HEAD", 0x7ffcc17d5ae0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/HEAD", 0x7ffcc17d5ae0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/HEAD", 0x7ffcc17d5ae0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/HEAD/HEAD", 0x7ffcc17d5ae0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+openat(AT_FDCWD, ".git/refs/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe77b81000
+getdents64(4, 0x7efe77b81040 /* 5 entries */, 1048576) = 136
+newfstatat(AT_FDCWD, ".git/refs/remotes", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/tags", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+getdents64(4, 0x7efe77b81040 /* 0 entries */, 1048576) = 0
+munmap(0x7efe77b81000, 1052672)         = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+openat(AT_FDCWD, ".git/objects/info/alternates", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/objects/pack/multi-pack-index", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/objects/pack", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04c70000)                     = 0x558d04c70000
+getdents64(4, 0x558d04b4f0c0 /* 6 entries */, 1048576) = 336
+access(".git/objects/pack/pack-6cecdff200cd7028d9a42116e728ef9fb7c95d19.keep", F_OK) = -1 ENOENT (No such file or directory)
+access(".git/objects/pack/pack-6cecdff200cd7028d9a42116e728ef9fb7c95d19.promisor", F_OK) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/objects/pack/pack-6cecdff200cd7028d9a42116e728ef9fb7c95d19.pack", {st_mode=S_IFREG|0444, st_size=813354536, ...}, 0) = 0
+access(".git/objects/pack/pack-9275e523fe433be22cf61aacde6650bda1fd0869.keep", F_OK) = -1 ENOENT (No such file or directory)
+access(".git/objects/pack/pack-9275e523fe433be22cf61aacde6650bda1fd0869.promisor", F_OK) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/objects/pack/pack-9275e523fe433be22cf61aacde6650bda1fd0869.pack", {st_mode=S_IFREG|0444, st_size=375223, ...}, 0) = 0
+getdents64(4, 0x558d04b4f0c0 /* 0 entries */, 1048576) = 0
+close(4)                                = 0
+openat(AT_FDCWD, ".git/objects/pack/pack-9275e523fe433be22cf61aacde6650bda1fd0869.idx", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=5608, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 5608, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7efe78072000
+close(4)                                = 0
+prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=512*1024, rlim_max=512*1024}) = 0
+openat(AT_FDCWD, ".git/objects/pack/pack-9275e523fe433be22cf61aacde6650bda1fd0869.pack", O_RDONLY|O_CLOEXEC) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0444, st_size=375223, ...}, AT_EMPTY_PATH) = 0
+read(4, "PACK\0\0\0\2\0\0\0\242", 12)   = 12
+pread64(4, "\222u\345#\376C;\342,\366\32\254\336fP\275\241\375\10i", 20, 375203) = 20
+mmap(NULL, 375223, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7efe77c26000
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/objects/00/00000000000000000000000000000000000000", 0x7ffcc17d5f40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "av_hubert/.git", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, "av_hubert/.git/HEAD", O_RDONLY) = 4
+read(4, "ref: refs/heads/main\n", 255)  = 21
+read(4, "", 234)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, "av_hubert/.git/commondir", 0x7ffcc17d60a0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+access("av_hubert/.git/objects", X_OK)  = 0
+access("av_hubert/.git/refs", X_OK)     = 0
+pipe2([4, 5], 0)                        = 0
+newfstatat(AT_FDCWD, "/usr/lib/git-core/git", {st_mode=S_IFREG|0755, st_size=3702168, ...}, 0) = 0
+pipe2([6, 7], 0)                        = 0
+openat(AT_FDCWD, "/dev/null", O_RDWR|O_CLOEXEC) = 8
+fcntl(8, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+fcntl(8, F_SETFD, FD_CLOEXEC)           = 0
+rt_sigprocmask(SIG_SETMASK, ~[RTMIN RT_1], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7efe77d95e50) = 3265
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+close(7)                                = 0
+read(6, "", 8)                          = 0
+close(6)                                = 0
+close(8)                                = 0
+close(5)                                = 0
+fcntl(4, F_GETFL)                       = 0 (flags O_RDONLY)
+newfstatat(4, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(4, "1 A. N... 000000 100644 100644 0"..., 4096) = 1997
+read(4, "", 4096)                       = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3265, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+close(4)                                = 0
+wait4(3265, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 3265
+newfstatat(AT_FDCWD, ".git/objects/00/00000000000000000000000000000000000000", 0x7ffcc17d6060, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00000.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00001.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00002.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00003.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00004.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00005.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00006.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00007.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00008.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00009.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00010.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00011.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00012.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00013.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00014.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00015.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00016.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00017.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00018.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00019.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00020.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00021.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00022.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00023.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00024.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00025.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00026.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00027.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00028.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00029.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "inf_demo.py", {st_mode=S_IFREG|0644, st_size=11652, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__/talklip.cpython-38.pyc", {st_mode=S_IFREG|0644, st_size=5589, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/__pycache__", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "models/talklip.py", {st_mode=S_IFREG|0644, st_size=10278, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_6.avi", {st_mode=S_IFREG|0644, st_size=1759206, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_6.mp4", {st_mode=S_IFREG|0644, st_size=1219507, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_6.avi", {st_mode=S_IFREG|0644, st_size=29871086, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_6.mp4", {st_mode=S_IFREG|0644, st_size=9103913, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "precess_video.py", {st_mode=S_IFREG|0644, st_size=2145, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation/audio_extract.py", {st_mode=S_IFREG|0644, st_size=1552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "preparation", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "process_audio.py", {st_mode=S_IFREG|0644, st_size=996, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, ".git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/HEAD", O_RDONLY) = 4
+read(4, "ref: refs/heads/main\n", 256)  = 21
+read(4, "", 235)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/refs/heads/main", O_RDONLY) = 4
+read(4, "a50ec80503373a875608a5fe278950e2"..., 256) = 41
+read(4, "", 215)                        = 0
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/HEAD", 0x7ffcc17d5ed0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/tags/HEAD", 0x7ffcc17d5ed0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/HEAD", 0x7ffcc17d5ed0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/HEAD", 0x7ffcc17d5ed0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/HEAD/HEAD", 0x7ffcc17d5ed0, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+openat(AT_FDCWD, ".git/info/grafts", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/shallow", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/objects/info/commit-graph", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, ".git/objects/info/commit-graphs/commit-graph-chain", O_RDONLY) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/objects/info/commit-graphs/commit-graph-chain", 0x7ffcc17d6150, 0) = -1 ENOENT (No such file or directory)
+access("/root/.config/git/ignore", R_OK) = -1 ENOENT (No such file or directory)
+access(".git/info/exclude", R_OK)       = 0
+openat(AT_FDCWD, ".git/info/exclude", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=240, ...}, AT_EMPTY_PATH) = 0
+read(4, "# git ls-files --others --exclud"..., 240) = 240
+close(4)                                = 0
+sysinfo({uptime=232415, loads=[5344, 6496, 9856], totalram=3839602688, freeram=192430080, sharedram=3022848, bufferram=0, totalswap=3439325184, freeswap=2680995840, procs=329, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+access("/root/.config/git/ignore", R_OK) = -1 ENOENT (No such file or directory)
+access(".git/info/exclude", R_OK)       = 0
+openat(AT_FDCWD, ".git/info/exclude", O_RDONLY) = 4
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=240, ...}, AT_EMPTY_PATH) = 0
+read(4, "# git ls-files --others --exclud"..., 240) = 240
+close(4)                                = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+newfstatat(4, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+getdents64(4, 0x558d04c4f230 /* 19 entries */, 1048576) = 696
+openat(AT_FDCWD, ".gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "mydata/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "mydata/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "mydata/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 10 entries */, 1048576) = 304
+openat(AT_FDCWD, "mydata/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_0615_61800/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_0615_61800/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_0615_61800/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 4 entries */, 1048576) = 144
+openat(AT_FDCWD, "fine_results_0615_61800/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "new_results_0615/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "new_results_0615/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "new_results_0615/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 672
+openat(AT_FDCWD, "new_results_0615/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+openat(AT_FDCWD, "ckpt/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 4 entries */, 1048576) = 144
+openat(AT_FDCWD, "ckpt/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+openat(AT_FDCWD, "new_results_0613/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 696
+openat(AT_FDCWD, "new_results_0613/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(5, 0x558d04d4f270 /* 41 entries */, 1048576) = 1496
+newfstatat(AT_FDCWD, "new_results_0613/6_480_6.avi", {st_mode=S_IFREG|0644, st_size=29871086, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_6.avi", {st_mode=S_IFREG|0644, st_size=2918132, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/1_6.mp4", {st_mode=S_IFREG|0644, st_size=1219507, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/4_6.mp4", {st_mode=S_IFREG|0644, st_size=2320093, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/6_480_6.mp4", {st_mode=S_IFREG|0644, st_size=9103913, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/3_6.mp4", {st_mode=S_IFREG|0644, st_size=1619592, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/2_6.mp4", {st_mode=S_IFREG|0644, st_size=2179917, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_6.mp4", {st_mode=S_IFREG|0644, st_size=1646712, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "new_results_0613/5_6.avi", {st_mode=S_IFREG|0644, st_size=2852684, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+openat(AT_FDCWD, "finetune_data/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 8 entries */, 1048576) = 240
+openat(AT_FDCWD, "finetune_data/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_data/datalist/.git", 0x7ffcc17d6860, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_data/datalist/.git/HEAD", 0x7ffcc17d6720, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_data/datalist/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "finetune_data/datalist/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+openat(AT_FDCWD, "finetune_data/norm_audio/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x558d04e4f2b0 /* 19 entries */, 1048576) = 728
+getdents64(6, 0x558d04e4f2b0 /* 13 entries */, 1048576) = 520
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00025.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00017.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00026.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00009.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00008.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00005.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00007.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00012.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00011.wav", {st_mode=S_IFREG|0644, st_size=319552, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00027.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00006.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00001.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+newfstatat(AT_FDCWD, "finetune_data/norm_audio/MAGGIE_00003.wav", {st_mode=S_IFREG|0644, st_size=320294, ...}, AT_SYMLINK_NOFOLLOW) = 0
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "finetune_data/audio/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x558d04e4f2b0 /* 19 entries */, 1048576) = 728
+getdents64(6, 0x558d04e4f2b0 /* 13 entries */, 1048576) = 520
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "finetune_data/bbx/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x558d04e4f2b0 /* 19 entries */, 1048576) = 728
+getdents64(6, 0x558d04e4f2b0 /* 13 entries */, 1048576) = 520
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "finetune_data/video/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x558d04e4f2b0 /* 19 entries */, 1048576) = 728
+getdents64(6, 0x558d04e4f2b0 /* 13 entries */, 1048576) = 520
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_062004/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_062004/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_062004/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 1000
+openat(AT_FDCWD, "fine_results_062004/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+openat(AT_FDCWD, "datalist/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 6 entries */, 1048576) = 184
+openat(AT_FDCWD, "datalist/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "log/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "log/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "log/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 5 entries */, 1048576) = 168
+openat(AT_FDCWD, "log/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+getdents64(4, 0x558d04c4f230 /* 59 entries */, 1048576) = 2232
+openat(AT_FDCWD, "face_detection/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 9 entries */, 1048576) = 272
+openat(AT_FDCWD, "face_detection/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "face_detection/__pycache__/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 6 entries */, 1048576) = 224
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "face_detection/detection/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0x558d04e4f2b0 /* 6 entries */, 1048576) = 168
+openat(AT_FDCWD, "face_detection/detection/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "face_detection/detection/sfd/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d05070000)                     = 0x558d05070000
+getdents64(7, 0x558d04f4f2f0 /* 10 entries */, 1048576) = 320
+openat(AT_FDCWD, "face_detection/detection/sfd/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "face_detection/detection/sfd/__pycache__/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 8
+newfstatat(8, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d05170000)                     = 0x558d05170000
+getdents64(8, 0x558d0504f330 /* 7 entries */, 1048576) = 280
+getdents64(8, 0x558d0504f330 /* 0 entries */, 1048576) = 0
+close(8)                                = 0
+getdents64(7, 0x558d04f4f2f0 /* 0 entries */, 1048576) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+close(7)                                = 0
+openat(AT_FDCWD, "face_detection/detection/__pycache__/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 7
+newfstatat(7, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d05070000)                     = 0x558d05070000
+getdents64(7, 0x558d04f4f2f0 /* 4 entries */, 1048576) = 136
+getdents64(7, 0x558d04f4f2f0 /* 0 entries */, 1048576) = 0
+close(7)                                = 0
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+close(6)                                = 0
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+openat(AT_FDCWD, "tmp_jpg_girl/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 592
+getdents64(5, 0x558d04d4f270 /* 261 entries */, 1048576) = 8352
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+openat(AT_FDCWD, "utils/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 6 entries */, 1048576) = 184
+openat(AT_FDCWD, "utils/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "utils/__pycache__/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 4 entries */, 1048576) = 144
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+close(5)                                = 0
+newfstatat(AT_FDCWD, "finetune_cctv_ckpt/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_cctv_ckpt/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_cctv_ckpt/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 896
+openat(AT_FDCWD, "finetune_cctv_ckpt/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_cctv_ckpt/samples_step000060750/.git", 0x7ffcc17d67a0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_cctv_ckpt/samples_step000060750/.git/HEAD", 0x7ffcc17d6660, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_cctv_ckpt/samples_step000060750/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 19 entries */, 1048576) = 592
+openat(AT_FDCWD, "finetune_cctv_ckpt/samples_step000060750/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+close(5)                                = 0
+openat(AT_FDCWD, "new_results_69/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 744
+getdents64(5, 0x558d04d4f270 /* 6 entries */, 1048576) = 248
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "__pycache__/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "__pycache__/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "__pycache__/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 3 entries */, 1048576) = 96
+openat(AT_FDCWD, "__pycache__/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_cctv_results_0620_61200/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_cctv_results_0620_61200/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_cctv_results_0620_61200/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 4 entries */, 1048576) = 160
+openat(AT_FDCWD, "fine_cctv_results_0620_61200/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+openat(AT_FDCWD, "new_results/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 736
+getdents64(5, 0x558d04d4f270 /* 46 entries */, 1048576) = 1800
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+openat(AT_FDCWD, "models/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 9 entries */, 1048576) = 304
+openat(AT_FDCWD, "models/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "models/__pycache__/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 6 entries */, 1048576) = 232
+getdents64(6, 0x558d04e4f2b0 /* 0 entries */, 1048576) = 0
+close(6)                                = 0
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+close(5)                                = 0
+openat(AT_FDCWD, "evaluation/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 9 entries */, 1048576) = 320
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_062003/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_062003/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_062003/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 14 entries */, 1048576) = 624
+openat(AT_FDCWD, "fine_results_062003/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_0615_61100/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_0615_61100/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_0615_61100/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "fine_results_0615_61100/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "scatch_cctv_results_0620_1200/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "scatch_cctv_results_0620_1200/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "scatch_cctv_results_0620_1200/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 6 entries */, 1048576) = 256
+openat(AT_FDCWD, "scatch_cctv_results_0620_1200/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_0615/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_0615/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_0615/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 10 entries */, 1048576) = 400
+openat(AT_FDCWD, "fine_results_0615/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_061903/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_061903/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_061903/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 864
+openat(AT_FDCWD, "fine_results_061903/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "avhubert_modification/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "avhubert_modification/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "avhubert_modification/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 4 entries */, 1048576) = 160
+openat(AT_FDCWD, "avhubert_modification/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+openat(AT_FDCWD, "tmp_jpg/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 592
+getdents64(5, 0x558d04d4f270 /* 109 entries */, 1048576) = 3488
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_061904/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_061904/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_061904/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 864
+openat(AT_FDCWD, "fine_results_061904/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_0615_63700/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_0615_63700/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_0615_63700/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 6 entries */, 1048576) = 256
+openat(AT_FDCWD, "fine_results_0615_63700/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "scatch_cctv_ckpt/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "scatch_cctv_ckpt/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "scatch_cctv_ckpt/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 928
+openat(AT_FDCWD, "scatch_cctv_ckpt/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_0619/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_0619/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_0619/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 18 entries */, 1048576) = 1072
+openat(AT_FDCWD, "fine_results_0619/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "finetune_cctv/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_cctv/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_cctv/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 9 entries */, 1048576) = 272
+openat(AT_FDCWD, "finetune_cctv/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_cctv/datalist/.git", 0x7ffcc17d67a0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_cctv/datalist/.git/HEAD", 0x7ffcc17d6660, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_cctv/datalist/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 4 entries */, 1048576) = 112
+openat(AT_FDCWD, "finetune_cctv/datalist/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+close(5)                                = 0
+openat(AT_FDCWD, "preparation/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 6 entries */, 1048576) = 192
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "finetune_ckpt/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_ckpt/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_ckpt/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=12288, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 896
+openat(AT_FDCWD, "finetune_ckpt/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_ckpt/samples_step000062200/.git", 0x7ffcc17d67a0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "finetune_ckpt/samples_step000062200/.git/HEAD", 0x7ffcc17d6660, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "finetune_ckpt/samples_step000062200/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04f70000)                     = 0x558d04f70000
+getdents64(6, 0x558d04e4f2b0 /* 19 entries */, 1048576) = 592
+openat(AT_FDCWD, "finetune_ckpt/samples_step000062200/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+brk(0x558d04d70000)                     = 0x558d04d70000
+close(5)                                = 0
+openat(AT_FDCWD, ".vscode/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+brk(0x558d04e70000)                     = 0x558d04e70000
+getdents64(5, 0x558d04d4f270 /* 3 entries */, 1048576) = 80
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_061902/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_061902/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_061902/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 1136
+openat(AT_FDCWD, "fine_results_061902/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+newfstatat(AT_FDCWD, "fine_results_0615_64100/.git", 0x7ffcc17d69d0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "fine_results_0615_64100/.git/HEAD", 0x7ffcc17d6890, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "fine_results_0615_64100/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 4 entries */, 1048576) = 160
+openat(AT_FDCWD, "fine_results_0615_64100/.gitignore", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+close(5)                                = 0
+openat(AT_FDCWD, "results/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 5
+newfstatat(5, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(5, 0x558d04d4f270 /* 19 entries */, 1048576) = 592
+getdents64(5, 0x558d04d4f270 /* 3 entries */, 1048576) = 96
+getdents64(5, 0x558d04d4f270 /* 0 entries */, 1048576) = 0
+close(5)                                = 0
+getdents64(4, 0x558d04c4f230 /* 0 entries */, 1048576) = 0
+brk(0x558d04c70000)                     = 0x558d04c70000
+close(4)                                = 0
+newfstatat(AT_FDCWD, ".git/MERGE_HEAD", 0x7ffcc17d6f30, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/rebase-apply", 0x7ffcc17d6dc0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/rebase-merge", 0x7ffcc17d6dc0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/CHERRY_PICK_HEAD", 0x7ffcc17d6d00, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/BISECT_LOG", 0x7ffcc17d6fc0, 0) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/REVERT_HEAD", 0x7ffcc17d6d00, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+openat(AT_FDCWD, ".git/sequencer/todo", O_RDONLY) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+unlink("/workspace/.git/index.lock")    = 0
+ioctl(1, TCGETS, 0x7ffcc17d6ee0)        = -1 ENOTTY (Inappropriate ioctl for device)
+newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=159099, ...}, AT_EMPTY_PATH) = 0
+newfstatat(AT_FDCWD, ".git/HEAD", {st_mode=S_IFREG|0644, st_size=21, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/HEAD", O_RDONLY) = 3
+read(3, "ref: refs/heads/main\n", 256)  = 21
+read(3, "", 235)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/refs/heads/main", O_RDONLY) = 3
+read(3, "a50ec80503373a875608a5fe278950e2"..., 256) = 41
+read(3, "", 215)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/origin/main", 0x7ffcc17d6210, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/main", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_SYMLINK_NOFOLLOW) = 0
+openat(AT_FDCWD, ".git/refs/heads/main", O_RDONLY) = 3
+read(3, "a50ec80503373a875608a5fe278950e2"..., 256) = 41
+read(3, "", 215)                        = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".git/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/tags/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/remotes/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/tags/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+newfstatat(AT_FDCWD, ".git/refs/heads/origin/main", 0x7ffcc17d6d40, AT_SYMLINK_NOFOLLOW) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, ".git/packed-refs", {st_mode=S_IFREG|0644, st_size=112, ...}, 0) = 0
+write(1, "On branch main\nYour branch is up"..., 8192On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .vscode/launch.json
+	new file:   adjust_au_rate.py
+	new file:   av_hubert
+	new file:   ckpt/global_contrastive.pth
+	new file:   face_detection/__pycache__/__init__.cpython-38.pyc
+	new file:   face_detection/__pycache__/api.cpython-38.pyc
+	new file:   face_detection/__pycache__/models.cpython-38.pyc
+	new file:   face_detection/__pycache__/utils.cpython-38.pyc
+	new file:   face_detection/detection/__pycache__/__init__.cpython-38.pyc
+	new file:   face_detection/detection/__pycache__/core.cpython-38.pyc
+	new file:   face_detection/detection/sfd/__pycache__/__init__.cpython-38.pyc
+	new file:   face_detection/detection/sfd/__pycache__/bbox.cpython-38.pyc
+	new file:   face_detection/detection/sfd/__pycache__/detect.cpython-38.pyc
+	new file:   face_detection/detection/sfd/__pycache__/net_s3fd.cpython-38.pyc
+	new file:   face_detection/detection/sfd/__pycache__/sfd_detector.cpython-38.pyc
+	new file:   face_detection/detection/sfd/s3fd-619a316812.pth
+	new file:   face_detection/detection/sfd/s3fd.pth
+	new file:   finetune_data/audio/MAGGIE_00000.wav
+	new file:   finetune_data/audio/MAGGIE_00001.wav
+	new file:   finetune_data/audio/MAGGIE_00002.wav
+	new file:   finetune_data/audio/MAGGIE_00003.wav
+	new file:   finetune_data/audio/MAGGIE_00004.wav
+	new file:   finetune_data/audio/MAGGIE_00005.wav
+	new file:   finetune_data/audio/MAGGIE_00006.wav
+	new file:   finetune_data/audio/MAGGIE_00007.wav
+	new file:   finetune_data/audio/MAGGIE_00008.wav
+	new file:   finetune_data/audio/MAGGIE_00009.wav
+	new file:   finetune_data/audio/MAGGIE_00010.wav
+	new file:   finetune_data/audio/MAGGIE_00011.wav
+	new file:   finetune_data/audio/MAGGIE_00012.wav
+	new file:   finetune_data/audio/MAGGIE_00013.wav
+	new file:   finetune_data/audio/MAGGIE_00014.wav
+	new file:   finetune_data/audio/MAGGIE_00015.wav
+	new file:   finetune_data/audio/MAGGIE_00016.wav
+	new file:   finetune_data/audio/MAGGIE_00017.wav
+	new file:   finetune_data/audio/MAGGIE_00018.wav
+	new file:   finetune_data/audio/MAGGIE_00019.wav
+	new file:   finetune_data/audio/MAGGIE_00020.wav
+	new file:   finetune_data/audio/MAGGIE_00021.wav
+	new file:   finetune_data/audio/MAGGIE_00022.wav
+	new file:   finetune_data/audio/MAGGIE_00023.wav
+	new file:   finetune_data/audio/MAGGIE_00024.wav
+	new file:   finetune_data/audio/MAGGIE_00025.wav
+	new file:   finetune_data/audio/MAGGIE_00026.wav
+	new file:   finetune_data/audio/MAGGIE_00027.wav
+	new file:   finetune_data/audio/MAGGIE_00028.wav
+	new file:   finetune_data/audio/MAGGIE_00029.wav
+	new file:   finetune_data/bbx/MAGGIE_00000.npy
+	new file:   finetune_data/bbx/MAGGIE_00001.npy
+	new file:   finetune_data/bbx/MAGGIE_00002.npy
+	new file:   finetune_data/bbx/MAGGIE_00003.npy
+	new file:   finetune_data/bbx/MAGGIE_00004.npy
+	new file:   finetune_data/bbx/MAGGIE_00005.npy
+	new file:   finetune_data/bbx/MAGGIE_00006.npy
+	new file:   finetune_data/bbx/MAGGIE_00007.npy
+	new file:   finetune_data/bbx/MAGGIE_00008.npy
+	new file:   finetune_data/bbx/MAGGIE_00009.npy
+	new file:   finetune_data/bbx/MAGGIE_00010.npy
+	new file:   finetune_data/bbx/MAGGIE_00011.npy
+	new file:   finetune_data/bbx/MAGGIE_00012.npy
+	new file:   finetune_data/bbx/MAGGIE_00013.npy
+	new file:   finetune_data/bbx/MAGGIE_00014.npy
+	new file:   finetune_data/bbx/MAGGIE_00015.npy
+	new file:   finetune_data/bbx/MAGGIE_00016.npy
+	new file:   finetune_data/bbx/MAGGIE_00017.npy
+	new file:   finetune_data/bbx/MAGGIE_00018.npy
+	new file:   finetune_data/bbx/MAGGIE_00019.npy
+	new file:   finetune_data/bbx/MAGGIE_00020.npy
+	new file:   finetune_data/bbx/MAGGIE_00021.npy
+	new file:   finetune_data/bbx/MAGGIE_00022.npy
+	new file:   finetune_data/bbx/MAGGIE_00023.npy
+	new file:   finetune_data/bbx/MAGGIE_00024.npy
+	new file:   finetune_data/bbx/MAGGIE_00025.npy
+	new file:   finetune_data/bbx/MAGGIE_00026.npy
+	new file:   finetune_data/bbx/MAGGIE_00027.npy
+	new file:   finetune_data/bbx/MAGGIE_00028.npy
+	new file:   finetune_data/bbx/MAGGIE_00029.npy
+	new file:   finetune_data/norm_audio/MAGGIE_00000.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00001.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00002.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00003.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00004.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00005.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00006.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00007.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00008.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00009.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00010.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00011.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00012.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00013.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00014.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00015.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00016.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00017.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00018.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00019.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00020.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00021.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00022.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00023.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00024.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00025.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00026.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00027.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00028.wav
+	new file:   finetune_data/norm_audio/MAGGIE_00029.wav
+	new file:   finetune_data/video/MAGGIE_00000.mp4
+	new file:   finetune_data/video/MAGGIE_00001.mp4
+	new file:   finetune_data/video/MAGGIE_00002.mp4
+	new file:   finetune_data/video/MAGGIE_00003.mp4
+	new file:   finetune_data/video/MAGGIE_00004.mp4
+	new file:   finetune_data/video/MAGGIE_00005.mp4
+	new file:   finetune_data/video/MAGGIE_00006.mp4
+	new file:   finetune_data/video/MAGGIE_00007.mp4
+	new file:   finetune_data/video/MAGGIE_00008.mp4
+	new file:   finetune_data/video/MAGGIE_00009.mp4
+	new file:   finetune_data/video/MAGGIE_00010.mp4
+	new file:   finetune_data/video/MAGGIE_00011.mp4
+	new file:   finetune_data/video/MAGGIE_00012.mp4
+	new file:   finetune_data/video/MAGGIE_00013.mp4
+	new file:   finetune_data/video/MAGGIE_00014.mp4
+	new file:   finetune_data/video/MAGGIE_00015.mp4
+	new file:   finetune_data/video/MAGGIE_00016.mp4
+	new file:   finetune_data/video/MAGGIE_00017.mp4
+	new file:   finetune_data/video/MAGGIE_00018.mp4
+	new file:   finetune_data/video/MAGGIE_00019.mp4
+	new file:   finetune_data/video/MAGGIE_00020.mp4
+	new file:   finetune_data/video/MAGGIE_00021.mp4
+	new file:   finetune_data/video/MAGGIE_00022.mp4
+	new file:   finetune_data/video/MAGGIE_00023.mp4
+	new file:   finetune_data/video/MAGGIE_00024.mp4
+	new file:   finetune_data/video/MAGGIE_00025.mp4
+	new file:   finetune_data/video/MAGGIE_00026.mp4
+	new file:   finetune_data/video/MAGGIE_00027.mp4
+	new file:   finetune_data/video/MAGGIE_00028.mp4
+	new file:   finetune_data/video/MAGGIE_00029.mp4
+	new file:   finetune_data/video_paths.txt
+	modified:   inf_demo.py
+	new file:   models/__pycache__/__init__.cpython-38.pyc
+	new file:   models/__pycache__/conv.cpython-38.pyc
+	new file:   models/__pycache__/learn_sync.cpython-38.pyc
+	new file:   models/__pycache__/talklip.cpython-38.pyc
+	new file:   new_results/1_1plus.avi
+	new file:   new_results/1_1plus.mp4
+	new file:   new_results/1_4plus.avi
+	new file:   new_results/1_4plus.mp4
+	new file:   new_results/1_4plus_test.avi
+	new file:   new_results/1_6.avi
+	new file:   new_results/1_6.mp4
+	new file:   new_results/1_6plus.avi
+	new file:   new_results/1_6plus.mp4
+	new file:   new_results/2_4plus.avi
+	new file:   new_results/2_4plus.mp4
+	new file:   new_results/3_4plus.avi
+	new file:   new_results/3_4plus.mp4
+	new file:   new_results/6_1080_4_20.avi
+	new file:   new_results/6_1080_4_20.mp4
+	new file:   new_results/6_1080_6_20.avi
+	new file:   new_results/6_1080_6_20.mp4
+	new file:   ) = 8192
+write(1, "new_results/6_10_plus_4plus.avi\n"..., 8192new_results/6_10_plus_4plus.avi
+	new file:   new_results/6_10_plus_4plus.mp4
+	new file:   new_results/6_480_6.avi
+	new file:   new_results/6_480_6.mp4
+	new file:   new_results/6_480_6_20.avi
+	new file:   new_results/6_480_6_20.mp4
+	new file:   new_results/6_480_6_25.avi
+	new file:   new_results/6_480_6_25.mp4
+	new file:   new_results/6_480_6_30.avi
+	new file:   new_results/6_480_6_30.mp4
+	new file:   new_results/6_480_6_40.avi
+	new file:   new_results/6_480_6_40.mp4
+	new file:   new_results/6_480_6plus.avi
+	new file:   new_results/6_480_6plus.mp4
+	new file:   new_results/6_4plus.avi
+	new file:   new_results/6_4plus.mp4
+	new file:   new_results/6_4plus_2.avi
+	new file:   new_results/6_4plus_2.mp4
+	new file:   new_results/girl_long_1plus.avi
+	new file:   new_results/girl_long_1plus.mp4
+	new file:   new_results/girl_long_4_20.avi
+	new file:   new_results/girl_long_4_20.mp4
+	new file:   new_results/girl_long_4plus.avi
+	new file:   new_results/girl_long_4plus.mp4
+	new file:   new_results/girl_long_6plus_orig.avi
+	new file:   new_results/girl_long_6plus_orig.mp4
+	new file:   new_results/maggei1_1plus.avi
+	new file:   new_results/maggei1_1plus.mp4
+	new file:   new_results/maggei1_2plus.avi
+	new file:   new_results/maggei1_2plus.mp4
+	new file:   new_results/maggei1_4plus.avi
+	new file:   new_results/maggei1_4plus.mp4
+	new file:   new_results/maggei1_6_plus.avi
+	new file:   new_results/maggei1_6_plus.mp4
+	new file:   new_results/maggei1_6_plus_40.avi
+	new file:   new_results/maggei1_6_plus_40.mp4
+	new file:   new_results/maggei1_6_plus_50.avi
+	new file:   new_results/maggei1_6_plus_50.mp4
+	new file:   new_results/maggei1_6_plus_55.avi
+	new file:   new_results/maggei1_6_plus_55.mp4
+	new file:   new_results/maggei1_6_plus_59.avi
+	new file:   new_results/maggei1_6_plus_59.mp4
+	new file:   new_results/maggei1_6plus.avi
+	new file:   new_results/maggei1_6plus.mp4
+	new file:   new_results/maggei1_6plus_orig.avi
+	new file:   new_results/maggei1_6plus_orig.mp4
+	new file:   new_results_0613/1_4.avi
+	new file:   new_results_0613/1_4.mp4
+	new file:   new_results_0613/1_6.avi
+	new file:   new_results_0613/1_6.mp4
+	new file:   new_results_0613/1_cctv_10.avi
+	new file:   new_results_0613/1_cctv_10.mp4
+	new file:   new_results_0613/1_cctv_50.avi
+	new file:   new_results_0613/1_cctv_50.mp4
+	new file:   new_results_0613/2_4.avi
+	new file:   new_results_0613/2_4.mp4
+	new file:   new_results_0613/2_cctv_10.avi
+	new file:   new_results_0613/2_cctv_10.mp4
+	new file:   new_results_0613/2_cctv_50.avi
+	new file:   new_results_0613/2_cctv_50.mp4
+	new file:   new_results_0613/3_4.avi
+	new file:   new_results_0613/3_4.mp4
+	new file:   new_results_0613/3_cctv_10.avi
+	new file:   new_results_0613/3_cctv_10.mp4
+	new file:   new_results_0613/3_cctv_50.avi
+	new file:   new_results_0613/3_cctv_50.mp4
+	new file:   new_results_0613/4_4.avi
+	new file:   new_results_0613/4_4.mp4
+	new file:   new_results_0613/4_cctv_10.avi
+	new file:   new_results_0613/4_cctv_10.mp4
+	new file:   new_results_0613/4_cctv_50.avi
+	new file:   new_results_0613/4_cctv_50.mp4
+	new file:   new_results_0613/5_4.avi
+	new file:   new_results_0613/5_4.mp4
+	new file:   new_results_0613/5_cctv_10.avi
+	new file:   new_results_0613/5_cctv_10.mp4
+	new file:   new_results_0613/5_cctv_50.avi
+	new file:   new_results_0613/5_cctv_50.mp4
+	new file:   new_results_0613/6_480_4.avi
+	new file:   new_results_0613/6_480_4.mp4
+	new file:   new_results_0613/6_480_6.avi
+	new file:   new_results_0613/6_480_6.mp4
+	new file:   new_results_0613/6_480_cctv_50.avi
+	new file:   new_results_0613/6_480_cctv_50.mp4
+	new file:   new_results_0613/cctv_cctv_10.avi
+	new file:   new_results_0613/cctv_cctv_10.mp4
+	new file:   new_results_0613/cctv_cctv_50.avi
+	new file:   new_results_0613/cctv_cctv_50.mp4
+	new file:   new_results_0613/girl_long_4.avi
+	new file:   new_results_0613/girl_long_4.mp4
+	new file:   new_results_0613/girl_long_6.avi
+	new file:   new_results_0613/girl_long_6.mp4
+	new file:   new_results_0613/maggie1_4.avi
+	new file:   new_results_0613/maggie1_4.mp4
+	new file:   new_results_0613/maggie_gl_20_480_4.avi
+	new file:   new_results_0613/maggie_gl_20_480_4.mp4
+	new file:   new_results_69/1_4_plus_1.avi
+	new file:   new_results_69/1_4_plus_1.mp4
+	new file:   new_results_69/2_4_plus_1.avi
+	new file:   new_results_69/2_4_plus_1.mp4
+	new file:   new_results_69/2_4plus.mp4
+	new file:   new_results_69/3_4_plus_1.avi
+	new file:   new_results_69/3_4_plus_1.mp4
+	new file:   new_results_69/3_6_1.avi
+	new file:   new_results_69/3_6_1.mp4
+	new file:   new_results_69/4_4_plus_1.avi
+	new file:   new_results_69/4_4_plus_1.mp4
+	new file:   new_results_69/6_480_4_plus.avi
+	new file:   new_results_69/6_480_4_plus.mp4
+	new file:   new_results_69/6_480_4_plus_2.avi
+	new file:   new_results_69/6_480_4_plus_2.mp4
+	new file:   new_results_69/6_480_4_plus_3.avi
+	new file:   new_results_69/6_480_4_plus_3.mp4
+	new file:   new_results_69/girl_long_4_plus_1.avi
+	new file:   new_results_69/girl_long_4_plus_1.mp4
+	new file:   new_results_69/maggie_gl_20_480_4.avi
+	new file:   new_results_69/maggie_gl_20_480_4.mp4
+	new file:   new_results_69/maggie_gl_20_480_6_2.avi
+	new file:   new_results_69/maggie_gl_20_480_6_2.mp4
+	new file:   output.mp4
+	new file:   precess_video.py
+	new file:   process_audio.py
+	new file:   process_maggie.py
+	modified:   requirement.txt
+	new file:   results/test10.avi
+	new file:   results/test10.mp4
+	new file:   results/test11.avi
+	new file:   results/test11.mp4
+	new file:   results/test2.avi
+	new file:   results/test2.mp4
+	new file:   results/test3.avi
+	new file:   results/test3.mp4
+	new file:   results/test4.avi
+	new file:   results/test4.mp4
+	new file:   results/test5.avi
+	new file:   results/test5.mp4
+	new file:   results/test6.avi
+	new file:   results/test6.mp4
+	new file:   results/test7.avi
+	new file:   results/test7.mp4
+	new file:   results/test8.avi
+	new file:   results/test8.mp4
+	new file:   results/test9.avi
+	new file:   results/test9.mp4
+	new file:   sys_video.py
+	new file:   test.jpg
+	new file:   test1.jpg
+	new file:   test2.jpg
+	new file:   tmp.avi
+	new file:   tmp.jpg
+	new file:   tmp.mp4
+	new file:   tmp_jpg/0.jpg
+	new file:   tmp_jpg/1.jpg
+	new file:   tmp_jpg/10.jpg
+	new file:   tmp_jpg/100.jpg
+	new file:   tmp_jpg/101.jpg
+	new file:   tmp_jpg/102.jpg
+	new file:   tmp_jpg/103.jpg
+	new file:   tmp_jpg/104.jpg
+	new file:   tmp_jpg/105.jpg
+	new file:   tmp_jpg/106.jpg
+	new file:   tmp_jpg/107.jpg
+	new file:   tmp_jpg/108.jpg
+	new file:   tmp_jpg/109.jpg
+	new file:   tmp_jpg/11.jpg
+	new file:   tmp_jpg/110.jpg
+	new file:   tmp_jpg/111.jpg
+	new file:   tmp_jpg/112.jpg
+	new file:   tmp_jpg/113.jpg
+	new file:   tmp_jpg/114.jpg
+	new file:   tmp_jpg/115.jpg
+	new file:   tmp_jpg/116.jpg
+	new file:   tmp_jpg/117.jpg
+	new file:   tmp_jpg/118.jpg
+	new file:   tmp_jpg/119.jpg
+	new file:   tmp_jpg/12.jpg
+	new file:   tmp_jpg/120.jpg
+	new file:   tmp_jpg/121.jpg
+	new file:   tmp_jpg/122.jpg
+	new file:   tmp_jpg/123.jpg
+	new file:   tmp_jpg/124.jpg
+	new file:   tmp_jpg/125.jpg
+	new file:   tmp_jpg/13.jpg
+	new file:   tmp_jpg/14.jpg
+	new file:   tmp_jpg/15.jpg
+	new file:   tmp_jpg/16.jpg
+	new file:   tmp_jpg/17.jpg
+	new file:   tmp_jpg/18.jpg
+	new file:   tmp_jpg/19.jpg
+	new file:   tmp_jpg/2.jpg
+	new file:   tmp_jpg/20.jpg
+	new file:   tmp_jpg/21.jpg
+	new file:   tmp_jpg/22.jpg
+	new file:   tmp_jpg/23.jpg
+	new file:   tmp_jpg/24.jpg
+	new file:   tmp_jpg/25.jpg
+	new file:   tmp_jpg/26.jpg
+	new file:   tmp_jpg/27.jpg
+	new file:   tmp_jpg/28.jpg
+	new file:   tmp_jpg/29.jpg
+	new file:   tmp_jpg/3.jpg
+	new file:   tmp_jpg/30.jpg
+	new file:   tmp_jpg/31.jpg
+	new file:   tmp_jpg/32.jpg
+	new file:   tmp_jpg/33.jpg
+	new file:   tmp_jpg/34.jpg
+	new file:   tmp_jpg/35.jpg
+	new file:   tmp_jpg/36.jpg
+	new file:   tmp_jpg/37.jpg
+	new file:   tmp_jpg/38.jpg
+	new file:   tmp_jpg/39.jpg
+	new file:   tmp_jpg/4.jpg
+	new file:   tmp_jpg/40.jpg
+	new file:   tmp_jpg/41.jpg
+	new file:   tmp_jpg/42.jpg
+	new file:   tmp_jpg/43.jpg
+	new file:   tmp_jpg/44.jpg
+	new file:   tmp_jpg/45.jpg
+	new file:   tmp_jpg/46.jpg
+	new file:   tmp_jpg/47.jpg
+	new file:   tmp_jpg/48.jpg
+	new file:   tmp_jpg/49.jpg
+	new file:   tmp_jpg/5.jpg
+	new file:   tmp_jpg/50.jpg
+	new file:  ) = 8192
+write(1, " tmp_jpg/51.jpg\n\tnew file:   tmp"..., 8192 tmp_jpg/51.jpg
+	new file:   tmp_jpg/52.jpg
+	new file:   tmp_jpg/53.jpg
+	new file:   tmp_jpg/54.jpg
+	new file:   tmp_jpg/55.jpg
+	new file:   tmp_jpg/56.jpg
+	new file:   tmp_jpg/57.jpg
+	new file:   tmp_jpg/58.jpg
+	new file:   tmp_jpg/59.jpg
+	new file:   tmp_jpg/6.jpg
+	new file:   tmp_jpg/60.jpg
+	new file:   tmp_jpg/61.jpg
+	new file:   tmp_jpg/62.jpg
+	new file:   tmp_jpg/63.jpg
+	new file:   tmp_jpg/64.jpg
+	new file:   tmp_jpg/65.jpg
+	new file:   tmp_jpg/66.jpg
+	new file:   tmp_jpg/67.jpg
+	new file:   tmp_jpg/68.jpg
+	new file:   tmp_jpg/69.jpg
+	new file:   tmp_jpg/7.jpg
+	new file:   tmp_jpg/70.jpg
+	new file:   tmp_jpg/71.jpg
+	new file:   tmp_jpg/72.jpg
+	new file:   tmp_jpg/73.jpg
+	new file:   tmp_jpg/74.jpg
+	new file:   tmp_jpg/75.jpg
+	new file:   tmp_jpg/76.jpg
+	new file:   tmp_jpg/77.jpg
+	new file:   tmp_jpg/78.jpg
+	new file:   tmp_jpg/79.jpg
+	new file:   tmp_jpg/8.jpg
+	new file:   tmp_jpg/80.jpg
+	new file:   tmp_jpg/81.jpg
+	new file:   tmp_jpg/82.jpg
+	new file:   tmp_jpg/83.jpg
+	new file:   tmp_jpg/84.jpg
+	new file:   tmp_jpg/85.jpg
+	new file:   tmp_jpg/86.jpg
+	new file:   tmp_jpg/87.jpg
+	new file:   tmp_jpg/88.jpg
+	new file:   tmp_jpg/89.jpg
+	new file:   tmp_jpg/9.jpg
+	new file:   tmp_jpg/90.jpg
+	new file:   tmp_jpg/91.jpg
+	new file:   tmp_jpg/92.jpg
+	new file:   tmp_jpg/93.jpg
+	new file:   tmp_jpg/94.jpg
+	new file:   tmp_jpg/95.jpg
+	new file:   tmp_jpg/96.jpg
+	new file:   tmp_jpg/97.jpg
+	new file:   tmp_jpg/98.jpg
+	new file:   tmp_jpg/99.jpg
+	new file:   tmp_jpg_girl/0.jpg
+	new file:   tmp_jpg_girl/1.jpg
+	new file:   tmp_jpg_girl/10.jpg
+	new file:   tmp_jpg_girl/100.jpg
+	new file:   tmp_jpg_girl/101.jpg
+	new file:   tmp_jpg_girl/102.jpg
+	new file:   tmp_jpg_girl/103.jpg
+	new file:   tmp_jpg_girl/104.jpg
+	new file:   tmp_jpg_girl/105.jpg
+	new file:   tmp_jpg_girl/106.jpg
+	new file:   tmp_jpg_girl/107.jpg
+	new file:   tmp_jpg_girl/108.jpg
+	new file:   tmp_jpg_girl/109.jpg
+	new file:   tmp_jpg_girl/11.jpg
+	new file:   tmp_jpg_girl/110.jpg
+	new file:   tmp_jpg_girl/111.jpg
+	new file:   tmp_jpg_girl/112.jpg
+	new file:   tmp_jpg_girl/113.jpg
+	new file:   tmp_jpg_girl/114.jpg
+	new file:   tmp_jpg_girl/115.jpg
+	new file:   tmp_jpg_girl/116.jpg
+	new file:   tmp_jpg_girl/117.jpg
+	new file:   tmp_jpg_girl/118.jpg
+	new file:   tmp_jpg_girl/119.jpg
+	new file:   tmp_jpg_girl/12.jpg
+	new file:   tmp_jpg_girl/120.jpg
+	new file:   tmp_jpg_girl/121.jpg
+	new file:   tmp_jpg_girl/122.jpg
+	new file:   tmp_jpg_girl/123.jpg
+	new file:   tmp_jpg_girl/124.jpg
+	new file:   tmp_jpg_girl/125.jpg
+	new file:   tmp_jpg_girl/126.jpg
+	new file:   tmp_jpg_girl/127.jpg
+	new file:   tmp_jpg_girl/128.jpg
+	new file:   tmp_jpg_girl/129.jpg
+	new file:   tmp_jpg_girl/13.jpg
+	new file:   tmp_jpg_girl/130.jpg
+	new file:   tmp_jpg_girl/131.jpg
+	new file:   tmp_jpg_girl/132.jpg
+	new file:   tmp_jpg_girl/133.jpg
+	new file:   tmp_jpg_girl/134.jpg
+	new file:   tmp_jpg_girl/135.jpg
+	new file:   tmp_jpg_girl/136.jpg
+	new file:   tmp_jpg_girl/137.jpg
+	new file:   tmp_jpg_girl/138.jpg
+	new file:   tmp_jpg_girl/139.jpg
+	new file:   tmp_jpg_girl/14.jpg
+	new file:   tmp_jpg_girl/140.jpg
+	new file:   tmp_jpg_girl/141.jpg
+	new file:   tmp_jpg_girl/142.jpg
+	new file:   tmp_jpg_girl/143.jpg
+	new file:   tmp_jpg_girl/144.jpg
+	new file:   tmp_jpg_girl/145.jpg
+	new file:   tmp_jpg_girl/146.jpg
+	new file:   tmp_jpg_girl/147.jpg
+	new file:   tmp_jpg_girl/148.jpg
+	new file:   tmp_jpg_girl/149.jpg
+	new file:   tmp_jpg_girl/15.jpg
+	new file:   tmp_jpg_girl/150.jpg
+	new file:   tmp_jpg_girl/151.jpg
+	new file:   tmp_jpg_girl/152.jpg
+	new file:   tmp_jpg_girl/153.jpg
+	new file:   tmp_jpg_girl/154.jpg
+	new file:   tmp_jpg_girl/155.jpg
+	new file:   tmp_jpg_girl/156.jpg
+	new file:   tmp_jpg_girl/157.jpg
+	new file:   tmp_jpg_girl/158.jpg
+	new file:   tmp_jpg_girl/159.jpg
+	new file:   tmp_jpg_girl/16.jpg
+	new file:   tmp_jpg_girl/160.jpg
+	new file:   tmp_jpg_girl/161.jpg
+	new file:   tmp_jpg_girl/162.jpg
+	new file:   tmp_jpg_girl/163.jpg
+	new file:   tmp_jpg_girl/164.jpg
+	new file:   tmp_jpg_girl/165.jpg
+	new file:   tmp_jpg_girl/166.jpg
+	new file:   tmp_jpg_girl/167.jpg
+	new file:   tmp_jpg_girl/168.jpg
+	new file:   tmp_jpg_girl/169.jpg
+	new file:   tmp_jpg_girl/17.jpg
+	new file:   tmp_jpg_girl/170.jpg
+	new file:   tmp_jpg_girl/171.jpg
+	new file:   tmp_jpg_girl/172.jpg
+	new file:   tmp_jpg_girl/173.jpg
+	new file:   tmp_jpg_girl/174.jpg
+	new file:   tmp_jpg_girl/175.jpg
+	new file:   tmp_jpg_girl/176.jpg
+	new file:   tmp_jpg_girl/177.jpg
+	new file:   tmp_jpg_girl/178.jpg
+	new file:   tmp_jpg_girl/179.jpg
+	new file:   tmp_jpg_girl/18.jpg
+	new file:   tmp_jpg_girl/180.jpg
+	new file:   tmp_jpg_girl/181.jpg
+	new file:   tmp_jpg_girl/182.jpg
+	new file:   tmp_jpg_girl/183.jpg
+	new file:   tmp_jpg_girl/184.jpg
+	new file:   tmp_jpg_girl/185.jpg
+	new file:   tmp_jpg_girl/186.jpg
+	new file:   tmp_jpg_girl/187.jpg
+	new file:   tmp_jpg_girl/188.jpg
+	new file:   tmp_jpg_girl/189.jpg
+	new file:   tmp_jpg_girl/19.jpg
+	new file:   tmp_jpg_girl/190.jpg
+	new file:   tmp_jpg_girl/191.jpg
+	new file:   tmp_jpg_girl/192.jpg
+	new file:   tmp_jpg_girl/193.jpg
+	new file:   tmp_jpg_girl/194.jpg
+	new file:   tmp_jpg_girl/195.jpg
+	new file:   tmp_jpg_girl/196.jpg
+	new file:   tmp_jpg_girl/197.jpg
+	new file:   tmp_jpg_girl/198.jpg
+	new file:   tmp_jpg_girl/199.jpg
+	new file:   tmp_jpg_girl/2.jpg
+	new file:   tmp_jpg_girl/20.jpg
+	new file:   tmp_jpg_girl/200.jpg
+	new file:   tmp_jpg_girl/201.jpg
+	new file:   tmp_jpg_girl/202.jpg
+	new file:   tmp_jpg_girl/203.jpg
+	new file:   tmp_jpg_girl/204.jpg
+	new file:   tmp_jpg_girl/205.jpg
+	new file:   tmp_jpg_girl/206.jpg
+	new file:   tmp_jpg_girl/207.jpg
+	new file:   tmp_jpg_girl/208.jpg
+	new file:   tmp_jpg_girl/209.jpg
+	new file:   tmp_jpg_girl/21.jpg
+	new file:   tmp_jpg_girl/210.jpg
+	new file:   tmp_jpg_girl/211.jpg
+	new file:   tmp_jpg_girl/212.jpg
+	new file:   tmp_jpg_girl/213.jpg
+	new file:   tmp_jpg_girl/214.jpg
+	new file:   tmp_jpg_girl/215.jpg
+	new file:   tmp_jpg_girl/216.jpg
+	new file:   tmp_jpg_girl/217.jpg
+	new file:   tmp_jpg_girl/218.jpg
+	new file:   tmp_jpg_girl/219.jpg
+	new file:   tmp_jpg_girl/22.jpg
+	new file:   tmp_jpg_girl/220.jpg
+	new file:   tmp_jpg_girl/221.jpg
+	new file:   tmp_jpg_girl/222.jpg
+	new file:   tmp_jpg_girl/223.jpg
+	new file:   tmp_jpg_girl/224.jpg
+	new file:   tmp_jpg_girl/225.jpg
+	new file:   tmp_jpg_girl/226.jpg
+	new file:   tmp_jpg_girl/227.jpg
+	new file:   tmp_jpg_girl/228.jpg
+	new file:   tmp_jpg_girl/229.jpg
+	new file:   tmp_jpg_girl/23.jpg
+	new file:   tmp_jpg_girl/230.jpg
+	new file:   tmp_jpg_girl/231.jpg
+	new file:   tmp_jpg_girl/232.jpg
+	new file:   tmp_jpg_girl/233.jpg
+	new file:   tmp_jpg_girl/234.jpg
+	new file:   tmp_jpg_girl/235.jpg
+	new file:   tmp_jpg_girl/236.jpg
+	new file:   tmp_jpg_girl/237.jpg
+	new file:   tmp_jpg_girl/238.jpg
+	new file:   tmp_jpg_girl/239.jpg
+	new file:   tmp_jpg_girl/24.jpg
+	new file:   tmp_jpg_girl/240.jpg
+	new file:   tmp_jpg_girl/241.jpg
+	new file:   tmp_jpg_girl/242.jpg
+	new file:   tmp_jpg_girl/243.jpg
+	new file:   tmp_jpg_girl/244.jpg
+	new file:   tmp_jpg_girl/245.jpg
+	new file:   tmp_jpg_girl/246.jpg
+	new file:   tmp_jpg_girl/247.jpg
+	new file:   tmp_jpg_girl/248.jpg
+	new file:   tmp_jpg_girl/249.jpg
+	new file:   tmp_jpg_girl/25.jpg
+	new file:   tmp_jpg_girl/250.jpg
+	new file:   tmp_jpg_girl/251.jpg
+	new file:   tmp_jpg_girl/252.jpg
+	new file:   tmp_jpg_girl/253.jpg
+	new file:   tmp_jpg_girl/254.jpg
+	new file:   tmp_jpg_girl/255.jpg
+	new file:   tmp_jpg_girl/256.jpg
+	new file:   tmp_jpg_girl/257.jpg
+	new file:   tmp_jpg_girl/258.jpg
+	new file:   tmp_jpg_girl/259.jpg
+	new file:   tmp_jpg_girl/26.jpg
+	new file:   tmp_jpg_girl/260.jpg
+	new file:   tmp_jpg_girl/261.jpg
+	new file:   tmp_jpg_girl/262.jpg
+	new file:   tmp_jpg_girl/263.jpg
+	new file:   tmp_jpg_girl/264.jpg
+	new file:   tmp_jpg_girl/265.jpg
+	new file:   tmp_jpg_girl/266.jpg
+	new file:   tmp_jpg_girl/267.jpg
+	new file:   tmp_jpg_girl/268.jpg
+	new file:   tmp_jpg_girl/269.jpg
+	new file:   tmp_jpg_girl/27.jpg
+	new file:   tmp_jpg_girl/270.jpg
+	new file:   tmp_jpg_girl/271.jpg
+	new file:   tmp_jpg_girl/272.jpg
+	new file:   tmp_jpg_girl/273.jpg
+	new file:   tmp_jpg_girl/274.jpg
+	new file:   tmp_jpg_girl/275.jpg
+	new file:   tmp_jpg_girl/276.jpg
+	new file:   tmp) = 8192
+newfstatat(1, "", {st_mode=S_IFREG|0644, st_size=187001, ...}, AT_EMPTY_PATH) = 0
+write(1, "_jpg_girl/277.jpg\n\tnew file:   t"..., 6289_jpg_girl/277.jpg
+	new file:   tmp_jpg_girl/28.jpg
+	new file:   tmp_jpg_girl/29.jpg
+	new file:   tmp_jpg_girl/3.jpg
+	new file:   tmp_jpg_girl/30.jpg
+	new file:   tmp_jpg_girl/31.jpg
+	new file:   tmp_jpg_girl/32.jpg
+	new file:   tmp_jpg_girl/33.jpg
+	new file:   tmp_jpg_girl/34.jpg
+	new file:   tmp_jpg_girl/35.jpg
+	new file:   tmp_jpg_girl/36.jpg
+	new file:   tmp_jpg_girl/37.jpg
+	new file:   tmp_jpg_girl/38.jpg
+	new file:   tmp_jpg_girl/39.jpg
+	new file:   tmp_jpg_girl/4.jpg
+	new file:   tmp_jpg_girl/40.jpg
+	new file:   tmp_jpg_girl/41.jpg
+	new file:   tmp_jpg_girl/42.jpg
+	new file:   tmp_jpg_girl/43.jpg
+	new file:   tmp_jpg_girl/44.jpg
+	new file:   tmp_jpg_girl/45.jpg
+	new file:   tmp_jpg_girl/46.jpg
+	new file:   tmp_jpg_girl/47.jpg
+	new file:   tmp_jpg_girl/48.jpg
+	new file:   tmp_jpg_girl/49.jpg
+	new file:   tmp_jpg_girl/5.jpg
+	new file:   tmp_jpg_girl/50.jpg
+	new file:   tmp_jpg_girl/51.jpg
+	new file:   tmp_jpg_girl/52.jpg
+	new file:   tmp_jpg_girl/53.jpg
+	new file:   tmp_jpg_girl/54.jpg
+	new file:   tmp_jpg_girl/55.jpg
+	new file:   tmp_jpg_girl/56.jpg
+	new file:   tmp_jpg_girl/57.jpg
+	new file:   tmp_jpg_girl/58.jpg
+	new file:   tmp_jpg_girl/59.jpg
+	new file:   tmp_jpg_girl/6.jpg
+	new file:   tmp_jpg_girl/60.jpg
+	new file:   tmp_jpg_girl/61.jpg
+	new file:   tmp_jpg_girl/62.jpg
+	new file:   tmp_jpg_girl/63.jpg
+	new file:   tmp_jpg_girl/64.jpg
+	new file:   tmp_jpg_girl/65.jpg
+	new file:   tmp_jpg_girl/66.jpg
+	new file:   tmp_jpg_girl/67.jpg
+	new file:   tmp_jpg_girl/68.jpg
+	new file:   tmp_jpg_girl/69.jpg
+	new file:   tmp_jpg_girl/7.jpg
+	new file:   tmp_jpg_girl/70.jpg
+	new file:   tmp_jpg_girl/71.jpg
+	new file:   tmp_jpg_girl/72.jpg
+	new file:   tmp_jpg_girl/73.jpg
+	new file:   tmp_jpg_girl/74.jpg
+	new file:   tmp_jpg_girl/75.jpg
+	new file:   tmp_jpg_girl/76.jpg
+	new file:   tmp_jpg_girl/77.jpg
+	new file:   tmp_jpg_girl/78.jpg
+	new file:   tmp_jpg_girl/79.jpg
+	new file:   tmp_jpg_girl/8.jpg
+	new file:   tmp_jpg_girl/80.jpg
+	new file:   tmp_jpg_girl/81.jpg
+	new file:   tmp_jpg_girl/82.jpg
+	new file:   tmp_jpg_girl/83.jpg
+	new file:   tmp_jpg_girl/84.jpg
+	new file:   tmp_jpg_girl/85.jpg
+	new file:   tmp_jpg_girl/86.jpg
+	new file:   tmp_jpg_girl/87.jpg
+	new file:   tmp_jpg_girl/88.jpg
+	new file:   tmp_jpg_girl/89.jpg
+	new file:   tmp_jpg_girl/9.jpg
+	new file:   tmp_jpg_girl/90.jpg
+	new file:   tmp_jpg_girl/91.jpg
+	new file:   tmp_jpg_girl/92.jpg
+	new file:   tmp_jpg_girl/93.jpg
+	new file:   tmp_jpg_girl/94.jpg
+	new file:   tmp_jpg_girl/95.jpg
+	new file:   tmp_jpg_girl/96.jpg
+	new file:   tmp_jpg_girl/97.jpg
+	new file:   tmp_jpg_girl/98.jpg
+	new file:   tmp_jpg_girl/99.jpg
+	new file:   utils/__pycache__/__init__.cpython-38.pyc
+	new file:   utils/__pycache__/data_avhubert.cpython-38.pyc
+	modified:   utils/data_avhubert.py
+	new file:   video_paths.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   .vscode/launch.json
+	modified:   av_hubert (modified content)
+	modified:   finetune_data/norm_audio/MAGGIE_00000.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00001.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00002.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00003.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00004.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00005.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00006.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00007.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00008.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00009.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00010.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00011.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00012.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00013.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00014.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00015.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00016.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00017.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00018.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00019.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00020.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00021.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00022.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00023.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00024.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00025.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00026.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00027.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00028.wav
+	modified:   finetune_data/norm_audio/MAGGIE_00029.wav
+	modified:   inf_demo.py
+	modified:   models/__pycache__/talklip.cpython-38.pyc
+	modified:   models/talklip.py
+	modified:   new_results_0613/1_6.avi
+	modified:   new_results_0613/1_6.mp4
+	modified:   new_results_0613/6_480_6.avi
+	modified:   new_results_0613/6_480_6.mp4
+	modified:   precess_video.py
+	modified:   preparation/audio_extract.py
+	modified:   process_audio.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	__pycache__/
+	avhubert_modification/
+	ckpt/lip_reading_expert.pt
+	datalist/text.txt
+	eval_finetune.py
+	eval_finetune_cctv.py
+	fine_cctv_results_0620_61200/
+	fine_results_0615/
+	fine_results_0615_61100/
+	fine_results_0615_61800/
+	fine_results_0615_63700/
+	fine_results_0615_64100/
+	fine_results_0619/
+	fine_results_061902/
+	fine_results_061903/
+	fine_results_061904/
+	fine_results_062003/
+	fine_results_062004/
+	finetune_cctv/
+	finetune_cctv_ckpt/
+	finetune_ckpt/
+	finetune_data/datalist/
+	finetune_wo_txt.py
+	infer_demo_fold.py
+	log/
+	maggie_gl_20_480_4_67300.avi
+	mydata/
+	new_results_0613/2_6.avi
+	new_results_0613/2_6.mp4
+	new_results_0613/3_6.avi
+	new_results_0613/3_6.mp4
+	new_results_0613/4_6.avi
+	new_results_0613/4_6.mp4
+	new_results_0613/5_6.avi
+	new_results_0613/5_6.mp4
+	new_results_0615/
+	oom
+	precess_video copy.py
+	run_finetune.py
+	run_finetune_cctv.py
+	run_info_demo.py
+	run_info_demo_cctv.py
+	run_scatch_cctv.py
+	scatch_cctv_ckpt/
+	scatch_cctv_results_0620_1200/
+	split_video_from_subtitle.py
+	strace.podman.txt
+	submit_run_finetune_job.sh
+	test_dataset.py
+
+) = 6289
+close(1)                                = 0
+getpid()                                = 3264
+exit_group(0)                           = ?
++++ exited with 0 +++
