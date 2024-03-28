@@ -1,4 +1,4 @@
-# TalkLip net
+# TalkLipPlus net
 
 This repo is the **Non-official**  implementation of 'Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert', CVPR 2023.[Paper](http://arxiv.org/abs/2303.17480)
 
