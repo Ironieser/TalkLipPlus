@@ -1,16 +1,25 @@
 # TalkLipPlus net
 
-This repo is the **Non-official**  implementation of 'Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert', CVPR 2023.[Paper](http://arxiv.org/abs/2303.17480)
+This repo is a new **SoTA** method by adds some features based on the **official**  implementation of 'Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert', CVPR 2023.[Paper](http://arxiv.org/abs/2303.17480)
 
+Author: Ironeiser.
+ 
+## 🔥Feauture🔥  
 
-## Feauture
+- 🛠️ Add **post-processing** to enhance the final performance.
+- 📊 Add **data pre-processing** to increase the train data quality.
+- 🧑‍🔬 Adjust the method that helps **fix the generated face** into the original video with higher quality.
+- 🏆 The result achieves **SoTA** compared with the original TalkLip and other methods before **2023.08**.
+- ⏱️ Train from scratch with a **5-minute** video. And infer with **no limited** 🎧 audio input.
 
-- Add post-processing to enhance the final performance.
-- Add data pre-processing to increase the train date quality.
-- Adjust the method which helps fix the generated face into the original video with higher quality.
-- The result achieves SoTA compared with the original TalkLip and other methods before 2023.08.
-- Train from scratch with a 5-minute video. And infer with no limited audio input.
-
+--- 
+The following sections haven't been changed, just copied from the official repo.  
+If you want to run this repo, please try to run it.
+```
+python run_finetune_cctv.py # xxx is the data name, refer to code.
+python run_info_demo_cctv.py #
+```
+--- 
 ## Prerequisite 
 
 1. `pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html`.
