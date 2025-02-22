@@ -33,7 +33,7 @@ If you find this repository useful, please cite **TalkLipPlus** using the follow
 
 ```bibtex
 @misc{talklipplus2024,
-  author    = {Ironeiser},
+  author    = {Sixun Dong},
   title     = {TalkLipPlus: Improved TalkLip for Talking Face Generation},
   year      = {2024},
   howpublished = {\url{https://github.com/Ironieser/TalkLipPlus}},
