@@ -13,7 +13,7 @@
             text-align: center;
         }
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 30px auto;
             background: white;
             padding: 20px;
@@ -45,23 +45,23 @@
         .btn:hover {
             background: #388E3C;
         }
+        /* 视频部分 */
         .video-container {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: nowrap; /* 禁止换行 */
+            align-items: flex-start;
+            gap: 15px;
             margin-top: 20px;
         }
         .video-box {
-            text-align: center;
+            flex: 1;
+            max-width: 32%;
             background: white;
             padding: 10px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            min-width: 300px;
-            max-width: 32%;
-            margin: 10px;
+            text-align: center;
         }
         video {
             width: 100%;
@@ -102,16 +102,17 @@
         }
     </style>
 </head>
+ 
 <body>
 
     <div class="container">
-        <h1>TalkLipPlus: A SoTA Talking Face Generation Model</h1>
+        <h1>TalkLipPlus: Improved TalkLip</h1>
         <p class="authors">Ironeiser</p>
 
         <div class="buttons">
-            <a href="https://arxiv.org/abs/2303.17480" class="btn" target="_blank">📄 Paper</a>
-            <a href="https://github.com/Ironieser/TalkLipPlus" class="btn" target="_blank">💻 Code</a>
-            <a href="https://ironieser.github.io/TalkLipPlus/" class="btn" target="_blank">🌐 Project Page</a>
+            <a href="https://arxiv.org/abs/2303.17480" class="btn" target="_blank">📄 TalkLip Paper</a>
+            <a href="https://github.com/Ironieser/TalkLipPlus" class="btn" target="_blank">💻 TalkLipPlus Code</a>
+            <a href="https://ironieser.github.io/TalkLipPlus/" class="btn" target="_blank">🌐 TalkLipPlus Project Page</a>
         </div>
 
         <h2>🎥 Video Comparisons</h2>
