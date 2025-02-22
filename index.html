@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TalkLipPlus - Project Homepage</title>
+    <title>TalkLipPlus - A SoTA Talking Face Generation Model</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
-        }
-        .navbar {
-            background: #4CAF50;
-            padding: 15px;
             text-align: center;
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
         }
         .container {
             max-width: 1000px;
@@ -27,20 +20,30 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .section {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        .title {
-            font-size: 28px;
-            font-weight: bold;
+        h1 {
+            font-size: 32px;
             margin-bottom: 10px;
         }
-        .description {
+        .authors {
             font-size: 18px;
-            line-height: 1.6;
-            text-align: justify;
-            padding: 0 20px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #388E3C;
         }
         .video-container {
             display: flex;
@@ -65,16 +68,15 @@
             border-radius: 8px;
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
         }
-        .links {
-            text-align: center;
-            font-size: 20px;
+        .abstract {
+            text-align: justify;
+            padding: 20px;
+            background: #f1f1f1;
             margin-top: 30px;
-        }
-        .links a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-            margin: 0 15px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .footer {
             margin-top: 30px;
@@ -83,6 +85,11 @@
             color: white;
             text-align: center;
             font-size: 18px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
         }
         @media (max-width: 900px) {
             .video-container {
@@ -97,57 +104,55 @@
 </head>
 <body>
 
-    <div class="navbar">
-        TalkLipPlus - A SoTA Talking Face Generation Model
-    </div>
-
     <div class="container">
-        <div class="section">
-            <h2 class="title">🚀 About TalkLipPlus</h2>
-            <p class="description">
-                TalkLipPlus is a new **SoTA** method that enhances **Talking Face Generation** based on the **TalkLip framework**. 
-                It introduces improved **post-processing**, better **data pre-processing**, and refined **face integration techniques**. 
-                Our model significantly boosts video generation quality and outperforms previous methods.
-            </p>
+        <h1>TalkLipPlus: A SoTA Talking Face Generation Model</h1>
+        <p class="authors">Ironeiser</p>
+
+        <div class="buttons">
+            <a href="https://arxiv.org/abs/2303.17480" class="btn" target="_blank">📄 Paper</a>
+            <a href="https://github.com/Ironieser/TalkLipPlus" class="btn" target="_blank">💻 Code</a>
+            <a href="https://ironieser.github.io/TalkLipPlus/" class="btn" target="_blank">🌐 Project Page</a>
         </div>
 
-        <div class="section">
-            <h2 class="title">🎥 Qualitative Comparisons</h2>
-            <p>⬇ Below are the generated videos from different models.</p>
-
-            <div class="video-container">
-                <div class="video-box">
-                    <p>Ground Truth (GT)</p>
-                    <video controls>
-                        <source src="CCTV_00007.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-box">
-                    <p>TalkLip</p>
-                    <video controls>
-                        <source src="CCTV_00007_CCTV_00007_62000_360p_finetune_1080.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-box">
-                    <p>TalkLip++</p>
-                    <video controls>
-                        <source src="output_video_test_cctv_gpen_wo_face_enhance_wo_possion_blending_w_gfpgan.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+        <h2>🎥 Video Comparisons</h2>
+        <div class="video-container">
+            <div class="video-box">
+                <p>Ground Truth (GT)</p>
+                <video controls>
+                    <source src="CCTV_00007.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-box">
+                <p>TalkLip</p>
+                <video controls>
+                    <source src="CCTV_00007_CCTV_00007_62000_360p_finetune_1080.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-box">
+                <p>TalkLip++</p>
+                <video controls>
+                    <source src="output_video_test_cctv_gpen_wo_face_enhance_wo_possion_blending_w_gfpgan.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
 
-        <div class="section">
-            <h2 class="title">📄 Paper & Code</h2>
-            <p>Explore our work in detail:</p>
-            <div class="links">
-                🔗 <a href="https://github.com/Ironieser/TalkLipPlus" target="_blank">GitHub Repository</a>
-<!--                 📄 <a href="https://arxiv.org/abs/2303.17480" target="_blank">Research Paper</a> -->
+        <h2>Abstract</h2>
+            <div class="abstract">
+                <p>
+                    TalkLipPlus is a new <strong>SoTA</strong> method that enhances <strong>Talking Face Generation</strong> based on the <strong>TalkLip framework</strong>. 
+                    It introduces improved <strong>post-processing</strong>, better <strong>data pre-processing</strong>, and refined <strong>face integration techniques</strong>. 
+                    Our model significantly improves video generation quality and outperforms previous methods.
+                </p>
+                <p>
+                    By leveraging advanced <strong>face integration methods</strong>, TalkLipPlus maintains facial consistency and enhances the realism of lip-synchronized talking face videos. 
+                    The model achieves <strong>state-of-the-art performance</strong>, surpassing TalkLip and other approaches before <strong>August 2023</strong>. 
+                    Training can be done with as little as <strong>5 minutes of video</strong>, and inference supports <strong>unlimited audio input</strong> for high-fidelity video synthesis.
+                </p>
             </div>
-        </div>
+
     </div>
 
     <div class="footer">
