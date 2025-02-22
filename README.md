@@ -3,7 +3,17 @@
 This repo is a new **SoTA** method by adds some features based on the **official**  implementation of 'Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert', CVPR 2023.[Paper](http://arxiv.org/abs/2303.17480)
 
 Author: Ironeiser.
- 
+
+
+# TalkLipPlus
+
+This repository presents **TalkLipPlus**, an improved **SoTA** method that extends the capabilities of the **official** implementation of ['Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert'](http://arxiv.org/abs/2303.17480), CVPR 2023.
+
+🔗 **Project Homepage:** [TalkLipPlus Website](https://ironieser.github.io/TalkLipPlus/)  
+
+**Author:** Sixun Dong
+
+
 ## 🔥Feauture🔥  
 
 - 🛠️ Add **post-processing** to enhance the final performance.
@@ -24,6 +34,17 @@ Click [here](https://ironieser.github.io/TalkLipPlus/) to watch the videos.
 | [![GT](https://github.com/Ironieser/TalkLipPlus/blob/main/1.jpg?raw=true)](https://ironieser.github.io/TalkLipPlus/CCTV_00007.mp4) | [![TalkLip](https://github.com/Ironieser/TalkLipPlus/blob/main/2.jpg?raw=true)](https://ironieser.github.io/TalkLipPlus/CCTV_00007_CCTV_00007_62000_360p_finetune_1080.mp4) | [![TalkLip++](https://github.com/Ironieser/TalkLipPlus/blob/main/3.jpg?raw=true)](https://ironieser.github.io/TalkLipPlus/output_video_test_cctv_gpen_wo_face_enhance_wo_possion_blending_w_gfpgan.mp4) |
 
 
+## 📖 **Citation**
+If you find this repository useful, please cite **TalkLipPlus** using the following BibTeX:
+
+```bibtex
+@misc{talklipplus2024,
+  author    = {Ironeiser},
+  title     = {TalkLipPlus: Improved TalkLip for Talking Face Generation},
+  year      = {2024},
+  howpublished = {\url{https://github.com/Ironieser/TalkLipPlus}},
+}
+```
 
 
 The following sections haven't been changed, just copied from the official repo.  
