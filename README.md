@@ -1,4 +1,4 @@
-# TalkLipPlus net
+# TalkLipPlus
 
 This repo is a new **SoTA** method by adds some features based on the **official**  implementation of 'Seeing What You Said: Talking Face Generation Guided by a Lip Reading Expert', CVPR 2023.[Paper](http://arxiv.org/abs/2303.17480)
 
@@ -19,7 +19,7 @@ Click [here](https://ironieser.github.io/TalkLipPlus/) to watch the videos.
 
 **Click on the images below to play the corresponding videos.** ⬇️
 
-| Ground Truth (GT) | TalkLip | TalkLip++ |
+| Ground Truth (GT) | TalkLip | TalkLipPlus |
 |-------------------|---------|-----------|
 | [![GT](https://github.com/Ironieser/TalkLipPlus/blob/main/1.jpg?raw=true)](https://ironieser.github.io/TalkLipPlus/CCTV_00007.mp4) | [![TalkLip](https://github.com/Ironieser/TalkLipPlus/blob/main/2.jpg?raw=true)](https://ironieser.github.io/TalkLipPlus/CCTV_00007_CCTV_00007_62000_360p_finetune_1080.mp4) | [![TalkLip++](https://github.com/Ironieser/TalkLipPlus/blob/main/3.jpg?raw=true)](https://ironieser.github.io/TalkLipPlus/output_video_test_cctv_gpen_wo_face_enhance_wo_possion_blending_w_gfpgan.mp4) |
 
